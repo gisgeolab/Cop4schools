@@ -1,0 +1,61 @@
+.. _1.1:
+
+What are Geographic Information Systems?
+========================================
+
+A geographic information system (GIS) is a system that can be used to analyze, manipulate, integrate, and map different data types. Through it, it is also possible to manage georeferenced data. GIS is used for a wide range of applications that span from visualizing bird biodiversity maps using data gathered through citizen science to monitoring a flooding event.
+
+.. _CRF:
+
+Coordinate Reference System
+---------------------------
+In order to define what is a coordinate reference system (CRS) we first need to talk about Coordinates and Datum.
+Coordinates are a sequence of values representing a location and form the basis of a coordinate system which is a sequence of coordinate axes where the unit of measurement is being specified.
+A datum is a mathematical model specifying the relationship through a coordinate system and the Earth.
+When a coordinate system is complemented with a datum, we get a coordinate reference system (CRS). :numref:`1.1.1`
+
+.. _1.1.1:
+
+.. figure:: /img/1/1.1.1.png
+   :align: center
+
+   -- Schematic of geographic coordinates system. The geographic coordinates of point p are defined by the angles φ (latitude) and λ (longitude)
+
+We define a projection as a method used to translate data from a three-dimensional surface of the Earth to a 2D representation. This process brings with it some distortions as there is no way of maintaining the scale of areas, distances, angles, and directions at the same time.
+Usually, when we look at world maps, we come in contact with maps using the Mercator projections. This kind of projection is especially used for navigation charts since straight lines drawn on it are lines of constant bearing. Mercator projection is also a conformal projection which means that angles and shapes are preserved at the cost of losing the scale of the area.
+Check out `the True Size website <https://www.thetruesize.com>`_.
+
+Projection
+**********
+.. _1.1.1.1:
+.. figure:: /img/1/1.1.1.1.png
+   
+   -- Distortions of Greenland area from different sample map projections. Source: https://www.axismaps.com
+
+GIS Data
+--------
+GIS data can be collected in different ways such as:map digitalization, direct survey, aerial survey and satellite measurements, each method with its pros and cons. 
+The two main types of spatial data used in GIS are represented by Raster and Vector data.
+
+.. _Raster Data:
+
+Raster Data
+***********
+
+Through Raster data we represent the world as a regular grid of pixels. Each cell location is defined by the type of raster coordinate system, the coordinate of the raster origin, which is usually placed in the upper or lower left corner and the cell size. The resolution of a raster dictates the level of detail it can capture. With this representation we can depict both discrete phenomena like land cover or administrative boundaries and continuous ones, like elevation or temperature.
+
+.. _1.1.2.1:
+.. figure:: /img/1/1.1.2.1.png
+   
+   -- Raster Data
+
+Vector Data
+***********
+
+With a vector representation, real world features are represented using three geometric features, points, lines and polygons. Points define the foundation of this representation and their position is given by a set of coordinates while lines and Polygons consist of interconnected points. These three features can represent different real world features depending on the scale of the map, for example a road can be represented with a line in a small scale map or with a polygon in a large scale one.
+Usually vector data are provided with an attribute table where each attribute of a feature, such as text, dates and times, is stored in a different column
+
+.. _1.1.2.2:
+.. figure:: /img/1/1.1.2.2.png
+   
+   -- Vector Data

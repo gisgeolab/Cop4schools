@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.1. What are Geographic Information Systems? &mdash; GIS4Schools  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="1.2. Introduction to QGIS" href="1_2.html" />
+    <link rel="prev" title="1. Introduction to GIS (Geographic Information System)" href="part1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            GIS4Schools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="part1.html">1. Introduction to GIS (Geographic Information System)</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.1. What are Geographic Information Systems?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#coordinate-reference-system">1.1.1. Coordinate Reference System</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#projection">1.1.1.1. Projection</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#gis-data">1.1.2. GIS Data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#raster-data">1.1.2.1. Raster Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vector-data">1.1.2.2. Vector Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="1_2.html">1.2. Introduction to QGIS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part2/part2.html">2. GIS and Analysis Tools</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">GIS4Schools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="part1.html"><span class="section-number">1. </span>Introduction to GIS (Geographic Information System)</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">1.1. </span>What are Geographic Information Systems?</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/part1/1_1.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="what-are-geographic-information-systems">
+<span id="id1"></span><h1><span class="section-number">1.1. </span>What are Geographic Information Systems?<a class="headerlink" href="#what-are-geographic-information-systems" title="Link to this heading"></a></h1>
+<p>A geographic information system (GIS) is a system that can be used to analyze, manipulate, integrate, and map different data types. Through it, it is also possible to manage georeferenced data. GIS is used for a wide range of applications that span from visualizing bird biodiversity maps using data gathered through citizen science to monitoring a flooding event.</p>
+<section id="coordinate-reference-system">
+<span id="crf"></span><h2><span class="section-number">1.1.1. </span>Coordinate Reference System<a class="headerlink" href="#coordinate-reference-system" title="Link to this heading"></a></h2>
+<p>In order to define what is a coordinate reference system (CRS) we first need to talk about Coordinates and Datum.
+Coordinates are a sequence of values representing a location and form the basis of a coordinate system which is a sequence of coordinate axes where the unit of measurement is being specified.
+A datum is a mathematical model specifying the relationship through a coordinate system and the Earth.
+When a coordinate system is complemented with a datum, we get a coordinate reference system (CRS). <a class="reference internal" href="#id2"><span class="std std-numref">Fig. 1.1.1.1</span></a></p>
+<figure class="align-center" id="id7">
+<span id="id2"></span><img alt="../_images/1.1.1.png" src="../_images/1.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1.1.1 </span><span class="caption-text">– Schematic of geographic coordinates system. The geographic coordinates of point p are defined by the angles φ (latitude) and λ (longitude)</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>We define a projection as a method used to translate data from a three-dimensional surface of the Earth to a 2D representation. This process brings with it some distortions as there is no way of maintaining the scale of areas, distances, angles, and directions at the same time.
+Usually, when we look at world maps, we come in contact with maps using the Mercator projections. This kind of projection is especially used for navigation charts since straight lines drawn on it are lines of constant bearing. Mercator projection is also a conformal projection which means that angles and shapes are preserved at the cost of losing the scale of the area.
+Check out <a class="reference external" href="https://www.thetruesize.com" rel="noopener noreferrer" target="_blank">the True Size website</a>.</p>
+<section id="projection">
+<h3><span class="section-number">1.1.1.1. </span>Projection<a class="headerlink" href="#projection" title="Link to this heading"></a></h3>
+<figure class="align-default" id="id8">
+<span id="id3"></span><img alt="../_images/1.1.1.1.png" src="../_images/1.1.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1.1.2 </span><span class="caption-text">– Distortions of Greenland area from different sample map projections. Source: <a class="reference external" href="https://www.axismaps.com" rel="noopener noreferrer" target="_blank">https://www.axismaps.com</a></span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="gis-data">
+<h2><span class="section-number">1.1.2. </span>GIS Data<a class="headerlink" href="#gis-data" title="Link to this heading"></a></h2>
+<p>GIS data can be collected in different ways such as:map digitalization, direct survey, aerial survey and satellite measurements, each method with its pros and cons.
+The two main types of spatial data used in GIS are represented by Raster and Vector data.</p>
+<section id="raster-data">
+<span id="id4"></span><h3><span class="section-number">1.1.2.1. </span>Raster Data<a class="headerlink" href="#raster-data" title="Link to this heading"></a></h3>
+<p>Through Raster data we represent the world as a regular grid of pixels. Each cell location is defined by the type of raster coordinate system, the coordinate of the raster origin, which is usually placed in the upper or lower left corner and the cell size. The resolution of a raster dictates the level of detail it can capture. With this representation we can depict both discrete phenomena like land cover or administrative boundaries and continuous ones, like elevation or temperature.</p>
+<figure class="align-default" id="id9">
+<span id="id5"></span><img alt="../_images/1.1.2.1.png" src="../_images/1.1.2.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1.2.1 </span><span class="caption-text">– Raster Data</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="vector-data">
+<h3><span class="section-number">1.1.2.2. </span>Vector Data<a class="headerlink" href="#vector-data" title="Link to this heading"></a></h3>
+<p>With a vector representation, real world features are represented using three geometric features, points, lines and polygons. Points define the foundation of this representation and their position is given by a set of coordinates while lines and Polygons consist of interconnected points. These three features can represent different real world features depending on the scale of the map, for example a road can be represented with a line in a small scale map or with a polygon in a large scale one.
+Usually vector data are provided with an attribute table where each attribute of a feature, such as text, dates and times, is stored in a different column</p>
+<figure class="align-default" id="id10">
+<span id="id6"></span><img alt="../_images/1.1.2.2.png" src="../_images/1.1.2.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1.2.2 </span><span class="caption-text">– Vector Data</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="part1.html" class="btn btn-neutral float-left" title="1. Introduction to GIS (Geographic Information System)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="1_2.html" class="btn btn-neutral float-right" title="1.2. Introduction to QGIS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, GEOLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
