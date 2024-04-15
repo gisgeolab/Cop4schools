@@ -1,24 +1,31 @@
-.. SIMILE documentation master file, created by
-   sphinx-quickstart on Fri Mar 19 10:52:13 2021.
+.. GIS4Schools documentation master file, created by
+   sphinx-quickstart on Tue Dec  1 09:26:11 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-SIMILE – PIATTAFORMA PER LA GESTIONE DEI DATI DI CITIZEN SCIENCE
-================================================================
-
-GUIDA INTRODUTTIVA ALLE FUNZIONALITA’ DELL’APPLICAZIONE WEB
------------------------------------------------------------
+COPERNICUS4Schools
+==================
 
 .. toctree::
    :maxdepth: 2
+   :caption: Contents:
+   :glob:
    :numbered:
-   :caption: Contenuti:
 
-   1_aspetti_generali
-   2_tematiche
-   3_strumenti
-   4_utenti
+   ./part1/part1
+   ./part2/part2
 
-.. admonition:: Nota
+.. toctree::
+   :hidden:
 
-   La presente guida introduttiva descrive le funzionalità dell’applicativo Web attualmente disponibile (release alpha 1.2.0, anno 2021).
+
+
+Co-funded by the Erasmus plus Programme of the European Union. Project number: 2020-1-IT02-KA201-079490
+
+.. image:: /img/EU-FPCUP-Logo_full_name.svg
+
+.. admonition:: Disclaimer
+
+   This project has been funded with support from the European Commission. This publication reflects the views only of the authors, and the Commission cannot be held responsible for any use which may be made of the information contained therein.
+
+License `Creative Commons — Attribution-NonCommercial-ShareAlike 3.0 Unported — CC-By-NC-SA <https://creativecommons.org/licenses/by-nc-sa/3.0/>`_
