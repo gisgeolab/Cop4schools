@@ -21,7 +21,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = "GIS4Schools"
+project = "COPERNICUS4Schools"
 copyright = "2021, GEOLab"
 author = "GEOLab"
 

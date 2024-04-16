@@ -1,4 +1,4 @@
-.. GIS4Schools documentation master file, created by
+.. COPERNICUS4Schools documentation master file, created by
    sphinx-quickstart on Tue Dec  1 09:26:11 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -13,19 +13,19 @@ COPERNICUS4Schools
    :numbered:
 
    ./part1/part1
-   ./part2/part2
+
 
 .. toctree::
    :hidden:
 
 
 
-Co-funded by the Erasmus plus Programme of the European Union. Project number: 2020-1-IT02-KA201-079490
+Co-funded by the European Union
 
 .. image:: /img/EU-FPCUP-Logo_full_name.svg
 
 .. admonition:: Disclaimer
 
-   This project has been funded with support from the European Commission. This publication reflects the views only of the authors, and the Commission cannot be held responsible for any use which may be made of the information contained therein.
+   Co-funded by the European Union’s Caroline Herschel Framework Partnership Agreement on Copernicus User Uptake under grant agreement No FPA 275/G/GRO/COPE/17/10042, project FPCUP (Framework Partnership Agreement on Copernicus User Uptake).
 
 License `Creative Commons — Attribution-NonCommercial-ShareAlike 3.0 Unported — CC-By-NC-SA <https://creativecommons.org/licenses/by-nc-sa/3.0/>`_
