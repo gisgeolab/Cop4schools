@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.1. The CLMS &mdash; COPERNICUS4Schools  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Computing land Cover affected by flooding" href="../part7/part7.html" />
+    <link rel="prev" title="2. Retrieving Copernicus Land Monitoring Service (CLMS) data" href="part5.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            COPERNICUS4Schools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part1/part1.html">1. Introduction to GIS (Geographic Information System)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="part5.html">2. Retrieving Copernicus Land Monitoring Service (CLMS) data</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.1. The CLMS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-corine-land-cover-layer">2.1.1. The CORINE Land Cover layer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#clms-map-viewer">2.1.1.1. CLMS Map Viewer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#importing-corine-land-cover-layer-in-qgis">2.1.2. Importing CORINE Land Cover Layer in QGIS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#load-style">2.1.2.1. Load Style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flooded-area-land-cover-classes">2.1.2.2. Flooded area land cover classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part7/part7.html">3. Computing land Cover affected by flooding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part8/part8.html">4. Population affected by flooding</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COPERNICUS4Schools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="part5.html"><span class="section-number">2. </span>Retrieving Copernicus Land Monitoring Service (CLMS) data</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2.1. </span>The CLMS</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/part5/5_1.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="the-clms">
+<span id="id1"></span><h1><span class="section-number">2.1. </span>The CLMS<a class="headerlink" href="#the-clms" title="Link to this heading"></a></h1>
+<p><a class="reference external" href="https://land.copernicus.eu/en" rel="noopener noreferrer" target="_blank">The Copernicus Land Monitoring Service (CLMS)</a>  is part of the Copernicus programme and it aims to provide geographical information on land use and land cover with its changes, ground motion, vegetation state, water cycle and earth surface energy variables. All in a pan-European and global context. All products are free of charge and can be used for any purpose.
+Once you have opened the CLMS website you will be greeted by its homepage (<a class="reference internal" href="#id2"><span class="std std-numref">Fig. 2.1.1</span></a>). From the top bar of the homepage you can go to other sections of the website devoted to: seek technical assistance <strong>(1)</strong>, view product updates <strong>(2)</strong>, check news and events <strong>(3)</strong> (these can be directly checked in the homepage) and take a look at work opportunities <strong>(4)</strong>. You can also register a new account or log in <strong>(5)</strong>: how to do so, will be shown in <a class="reference internal" href="#id14"><span class="std std-numref">Fig. 2.1.1.2</span></a>. Lastly, it is possible to search directly for the information you are interested in by using the search bar <strong>(6)</strong>.
+It is also possible to reach the main pages of the website using the main menu <strong>(7)</strong>, those pages will be discussed further below.
+By clicking on the listed product types <strong>(8)</strong> you will be brought to the Data Viewer page already filtered by the products you have selected. Datasets are grouped into categories, including:</p>
+<ul class="simple">
+<li><p>land cover and land use mapping, consisting of land cover classifications and layers on vegetated land cover characteristics;</p></li>
+<li><p>priority area monitoring, including land cover/land use information for specific areas of interest prone to environmental changes;</p></li>
+<li><p>bio-geophysical parameters, encompassing layers on the status and evolution of the land surface, complemented by the long-term time series;</p></li>
+<li><p>ground motion monitoring, including information on the natural and anthropogenic ground motion;</p></li>
+<li><p>satellite data, that is, satellite image mosaics from Copernicus and commercial satellite missions for land surface conditions monitoring;</p></li>
+<li><p>reference and validation data, consisting of ground-based observations that can be used as geospatial reference data.</p></li>
+</ul>
+<figure class="align-center" id="id26">
+<span id="id2"></span><img alt="../_images/5.1.1.png" src="../_images/5.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.1 </span><span class="caption-text">– CLMS website - homepage pt.1</span><a class="headerlink" href="#id26" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Scrolling down the webpage you will see two main buttons (<a class="reference internal" href="#id3"><span class="std std-numref">Fig. 2.1.2</span></a>), one will bring you to the <strong>Dataset catalogue</strong> page <strong>(1)</strong> and the other to the <strong>Data Viewer</strong> page <strong>(2)</strong>. It is also possible to take a look at all news, events and product updates by moving through the respective tabs <strong>(3)</strong>.</p>
+<figure class="align-center" id="id27">
+<span id="id3"></span><img alt="../_images/5.1.2.png" src="../_images/5.1.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2 </span><span class="caption-text">– CLMS website - homepage pt.2</span><a class="headerlink" href="#id27" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Scrolling further down we reach the end of the homepage (<a class="reference internal" href="#id4"><span class="std std-numref">Fig. 2.1.3</span></a>). Here users of the CLMS are presented and it is also possible to open the <strong>Use Cases</strong> page <strong>(1)</strong>. At the very bottom of the page, there is a section with more technical information <strong>(2)</strong> grouping: <strong>Disclaimer</strong>, <strong>Data</strong> <strong>Policy</strong>, <strong>Personal data protection</strong>, <strong>Cookies</strong> and finally a <strong>Sitemap</strong>, opening this last page shows the complete structure of the site itself.</p>
+<figure class="align-center" id="id28">
+<span id="id4"></span><img alt="../_images/5.1.3.png" src="../_images/5.1.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.3 </span><span class="caption-text">– CLMS website - homepage pt.3</span><a class="headerlink" href="#id28" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>From the homepage, we can open the CLMS portfolio page (<a class="reference internal" href="#id5"><span class="std std-numref">Fig. 2.1.4</span></a>) by clicking on <strong>CLMS portfolio (1)</strong>. By default, the <strong>Get Overview</strong> section will be open <strong>(2)</strong>. In this section, it is possible to open and read a brief overview of all CLMS products containing a description and other information that depends on the product type such as reference year, geographic coverage, update frequency, scale, spatial resolution Minimum Mapping Unit (MMU) and EO data sources.</p>
+<figure class="align-center" id="id29">
+<span id="id5"></span><img alt="../_images/5.1.4.png" src="../_images/5.1.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.4 </span><span class="caption-text">– CLMS website - CLMS portfolio pt.1</span><a class="headerlink" href="#id29" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Opening the <strong>Explore</strong> tab (<a class="reference internal" href="#id6"><span class="std std-numref">Fig. 2.1.5</span></a>) <strong>(1)</strong> will allow you to see and subsequently open each product page. By clicking on <strong>Filters (2)</strong> a lateral bar will open <strong>(3)</strong> where it is possible to select a subset of all products by ticking boxes <strong>(4)</strong>.</p>
+<figure class="align-center" id="id30">
+<span id="id6"></span><img alt="../_images/5.1.5.png" src="../_images/5.1.5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.5 </span><span class="caption-text">– CLMS website - CLMS portfolio pt.2</span><a class="headerlink" href="#id30" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Clicking on <strong>Dataset catalogue (1)</strong> (<a class="reference internal" href="#id7"><span class="std std-numref">Fig. 2.1.6</span></a>) we open the homonymous page. This page is similar to the DLMS portfolio one but shows a list of all data. It is possible to find the desired product by using the search bar <strong>(2)</strong> and/or by clicking on the <strong>Filters (3)</strong> and selecting the parameters from the lateral menu that will open up <strong>(4)</strong>.</p>
+<figure class="align-center" id="id31">
+<span id="id7"></span><img alt="../_images/5.1.6.png" src="../_images/5.1.6.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.6 </span><span class="caption-text">– CLMS website - Dataset catalogue</span><a class="headerlink" href="#id31" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>From the Data Viewer page <strong>(1)</strong> (<a class="reference internal" href="#id8"><span class="std std-numref">Fig. 2.1.7</span></a>) we can visualize data, we will show more about the many offered options in <a class="reference internal" href="#id13"><span class="std std-numref">Fig. 2.1.1.1</span></a>.</p>
+<figure class="align-center" id="id32">
+<span id="id8"></span><img alt="../_images/5.1.7.png" src="../_images/5.1.7.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.7 </span><span class="caption-text">– CLMS website - Data viewer</span><a class="headerlink" href="#id32" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>By clicking on <strong>Use Cases (1)</strong> (<a class="reference internal" href="#id9"><span class="std std-numref">Fig. 2.1.8</span></a>) the page that will open will be set to show the <strong>Browse Use Cases catalogue</strong> tab <strong>(2)</strong> by default. In the top part of this tab, we have a highlight of the latest use case.</p>
+<figure class="align-center" id="id33">
+<span id="id9"></span><img alt="../_images/5.1.8.png" src="../_images/5.1.8.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.8 </span><span class="caption-text">– CLMS website - Use cases pt.1</span><a class="headerlink" href="#id33" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Scrolling down in this tab we have a list of all activations (<a class="reference internal" href="#id10"><span class="std std-numref">Fig. 2.1.9</span></a>) and we can browse them using the search bar <strong>(1)</strong>. There are many activations and some may not be shown directly on the page, if the activation we are looking for is not shown it is possible to move between the other activations using the arrows and/or page reference <strong>(2)</strong> at the end of the activations list. It is also possible to submit your own use cases by clicking on <strong>Submit your use case (3)</strong> and filling out a form.</p>
+<figure class="align-center" id="id34">
+<span id="id10"></span><img alt="../_images/5.1.9.png" src="../_images/5.1.9.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.9 </span><span class="caption-text">–  CLMS website - Use cases pt.2</span><a class="headerlink" href="#id34" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>From the top of the <strong>Use Cases</strong> page (<a class="reference internal" href="#id11"><span class="std std-numref">Fig. 2.1.10</span></a>) , we can open the second tab which is the <strong>Find Use Cases in your Country</strong> tab <strong>(1)</strong>. From there you can use the interactive map <strong>(2)</strong> to look for use cases in a specific country.</p>
+<figure class="align-center" id="id35">
+<span id="id11"></span><img alt="../_images/5.1.10.png" src="../_images/5.1.10.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.10 </span><span class="caption-text">– CLMS website - Use cases pt.3</span><a class="headerlink" href="#id35" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The last page that we can reach from the main menu will group information about the CLMS (<a class="reference internal" href="#id12"><span class="std std-numref">Fig. 2.1.11</span></a>) . This page can be reached by clicking on <strong>About Us (1)</strong>. Here there is information about what CLMS is and what it does. Ultimately there is the possibility to contact the helpdesk to seek answers to questions that do not find one on the website.</p>
+<figure class="align-center" id="id36">
+<span id="id12"></span><img alt="../_images/5.1.11.png" src="../_images/5.1.11.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.11 </span><span class="caption-text">– CLMS website - About us</span><a class="headerlink" href="#id36" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="the-corine-land-cover-layer">
+<h2><span class="section-number">2.1.1. </span>The CORINE Land Cover layer<a class="headerlink" href="#the-corine-land-cover-layer" title="Link to this heading"></a></h2>
+<p>Among the CLMS products, the CORINE Land Cover (CLC) layer is of great importance for manifold applications. The CORINE (Coordination of Information on the Environment) programme is a component of the CLMS and a European effort to develop a standardized methodology for producing continent-scale land cover, biotope, and air quality maps. Specifically, the <a class="reference external" href="https://land.copernicus.eu/en/products/corine-land-cover" rel="noopener noreferrer" target="_blank">CORINE Land Cover</a> product offers a pan-European land cover and land use inventory with 44 thematic classes. All products are free of charge and can be used for any purpose. It is updated every six years, with its last version in 2018; the 2024 reference year update is scheduled for publication in the first quarter of 2026.
+In the following sections, we propose an exercise based on the exploitation of the CLC layer. The exercise involves the following steps:</p>
+<ul class="simple">
+<li><p>download the CLC layer</p></li>
+<li><p>import the CLC layer in QGIS</p></li>
+<li><p>apply a standard symbology</p></li>
+<li><p>clip the layer to the extent of the flooded area</p></li>
+</ul>
+<section id="clms-map-viewer">
+<h3><span class="section-number">2.1.1.1. </span>CLMS Map Viewer<a class="headerlink" href="#clms-map-viewer" title="Link to this heading"></a></h3>
+<p>Click on <a class="reference external" href="https://land.copernicus.eu/en/map-viewer?dataset=0407d497d3c44bcd93ce8fd5bf78596a" rel="noopener noreferrer" target="_blank">Data Viewer</a> . You will be redirected to the data viewer application (<a class="reference internal" href="#id13"><span class="std std-numref">Fig. 2.1.1.1</span></a>) .
+Inside the <strong>Products and Dataset</strong> menu <strong>(1)</strong> a list of all products is shown and we can activate them, in this example, only the CORINE Land Cover dataset has been activated <strong>(2)</strong> between all CLC products only the CLC relative to 2018 has been activated <strong>(3)</strong>. Active layers are shown in the map <strong>(4)</strong> and can be seen in the <strong>Active layers</strong> menu <strong>(5)</strong>. A list of all buttons on the right of the screen is reported here:</p>
+<ul class="simple">
+<li><p><strong>Zoom in</strong> and <strong>Zoom out (6)</strong>: allow to zoom in and out the map;</p></li>
+<li><p><strong>Swipe (7)</strong>: from here you can set a Leading Layer and a Trailing Layer;</p></li>
+<li><p><strong>Legend (8)</strong>: shows the legend of all active layers;</p></li>
+<li><p><strong>Measurement (9)</strong>: allows you to compute measurement on the map in terms of distance and area and also allows you to know the coordinates of every point on the map where you place your mouse;</p></li>
+<li><p><strong>Print (10)</strong>: allows you to download Layout or Maps</p></li>
+<li><p><strong>Basemap gallery (11)</strong>: allows you to change the base map;</p></li>
+<li><p><strong>Layer info (12)</strong>: allows you to click on the map to get pixel information</p></li>
+<li><p><strong>Bookmark (13)</strong>: allows you to bookmark the current map in order to retrieve it later</p></li>
+</ul>
+<figure class="align-center" id="id37">
+<span id="id13"></span><img alt="../_images/5.1.1.1.png" src="../_images/5.1.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.1.1 </span><span class="caption-text">– LMS data viewer</span><a class="headerlink" href="#id37" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Click on <a class="reference external" href="https://land.copernicus.eu/en/products/corine-land-cover/clc2018?" rel="noopener noreferrer" target="_blank">this link</a>  for Downloading the CORINE Land Cover 2018 layer. This link will lead you to the web page illustrated in (<a class="reference internal" href="#id14"><span class="std std-numref">Fig. 2.1.1.2</span></a>), to start downloading the land cover layer after accessing the website. Firstly, click on <strong>Download (1)</strong>, and a new window, asking you to log in, will pop up <strong>(2)</strong>. Follow the link to create an EU account <strong>(3)</strong>.
+A login is required for data downloading from CLMS.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>you might need to be over 18 to be able to create an account.</p>
+</div>
+<figure class="align-center" id="id38">
+<span id="id14"></span><img alt="../_images/5.1.1.2.png" src="../_images/5.1.1.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.1.2 </span><span class="caption-text">– User authentication</span><a class="headerlink" href="#id38" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>After login, you will notice your username is written in the top bar <strong>(1)</strong> as illustrated in (<a class="reference internal" href="#id15"><span class="std std-numref">Fig. 2.1.1.3</span></a>) , together with the cart that you can fill in with the data that you are interested in (2)**. You can visualize the land cover layer and select the area of interest: click on <strong>Go to download by area (3)</strong>. The selection of a specific area of interest has the advantage of occupying less storage space while requiring less computational time when dealing with the data in QGIS.</p>
+<figure class="align-center" id="id39">
+<span id="id15"></span><img alt="../_images/5.1.1.3.png" src="../_images/5.1.1.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.1.3 </span><span class="caption-text">– LMS Interface after login</span><a class="headerlink" href="#id39" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>After a click on <strong>Go to download by area</strong>, you can select the area of interest by clicking on the icon with the dotted line and the mouse arrow <strong>(1)</strong> (<a class="reference internal" href="#id16"><span class="std std-numref">Fig. 2.1.1.4</span></a>) , and then selecting <strong>Draw a rectangle on the map (2)</strong>. Click on a point on the map and drag your mouse. A black rectangle will appear. Be careful to include the area of interest. Now release it <strong>(3)</strong>. Now click on the download icon <strong>(4)</strong>, and your selected product will be added to the cart. Click on the cart icon <strong>(5)</strong>.</p>
+<figure class="align-center" id="id40">
+<span id="id16"></span><img alt="../_images/5.1.1.4.png" src="../_images/5.1.1.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.1.4 </span><span class="caption-text">– Download Corine land cover for the area of interest part 1</span><a class="headerlink" href="#id40" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>From the Cart (<a class="reference internal" href="#id17"><span class="std std-numref">Fig. 2.1.1.5</span></a>) you will see all your products, in this case, we placed only product one in the cart. Set the <strong>Type</strong> as <strong>RASTER (1)</strong> and the Projection to <strong>EPSG:4326 (Source system of the dataset) (2)</strong>, once done, click on <strong>Process Download Request (3)</strong>, after a few minutes you will receive an email containing a link to start your download.</p>
+<figure class="align-center" id="id41">
+<span id="id17"></span><img alt="../_images/5.1.1.5.png" src="../_images/5.1.1.5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.1.5 </span><span class="caption-text">– Download Corine land cover for the area of interest part 2</span><a class="headerlink" href="#id41" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="importing-corine-land-cover-layer-in-qgis">
+<h2><span class="section-number">2.1.2. </span>Importing CORINE Land Cover Layer in QGIS<a class="headerlink" href="#importing-corine-land-cover-layer-in-qgis" title="Link to this heading"></a></h2>
+<p>The downloaded data are raster data, so we can add them in QGIS as seen in <strong>Chapter (421 add link)</strong>. As shown in (<a class="reference internal" href="#id18"><span class="std std-numref">Fig. 2.1.2.1</span></a>) , click on <strong>Layer (1)</strong>, then <strong>Add Layer (2)</strong> and choose <strong>Add Raster Layer (3)</strong>. From the <strong>Data Source Manager</strong> click on the three-dotted button <strong>(4)</strong>, and look for the “.tif” file in your folders (the file name is “U2018_CLC2018_V2020_20u1.tif”). You can now click on <strong>Add (5)</strong> and <strong>Close (6)</strong>.</p>
+<figure class="align-center" id="id42">
+<span id="id18"></span><img alt="../_images/5.1.2.1.png" src="../_images/5.1.2.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.1 </span><span class="caption-text">– Import raster data in QGIS</span><a class="headerlink" href="#id42" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="load-style">
+<h3><span class="section-number">2.1.2.1. </span>Load Style<a class="headerlink" href="#load-style" title="Link to this heading"></a></h3>
+<p>A file containing the style of the CLC layer has been downloaded as well, and it can be easily imported in QGIS as follows (<a class="reference internal" href="#id19"><span class="std std-numref">Fig. 2.1.2.2</span></a>) . First, right-click on the layer you have just imported in QGIS <strong>(1)</strong>, go to <strong>Properties (2)</strong> and open the <strong>Symbology</strong> menu <strong>(3)</strong>. In the bottom right corner click on <strong>Style (4)</strong> and select the <strong>Load Style…</strong> option <strong>(5)</strong>. In the Database Styles Manager menu that will pop up, click on the three-dotted icon <strong>(6)</strong>, the path to find your data should look like this: “…Results65791EEAU2018_CLC2018_V2020_20u1_raster100m_tiled_docInfoLegendRasterclc_legend_qgis_raster.qml” except for the first part where you need to find where the Results file has been saved and the product identifier that can be different. The .qml format is human-readable and can be easily edited using a text editor or within QGIS itself where it is used to store information about layers style. In general this file format is used to define layouts of the user interface like the position of images and buttons. Once you have imported the file, click on <strong>Load Style (7)</strong> and <strong>OK (8)</strong>.</p>
+<p>..note:: You can read more about .qml format <a class="reference external" href="https://doc.qt.io/qt-6/qtqml-documents-topic.html" rel="noopener noreferrer" target="_blank">here</a> .</p>
+<figure class="align-center" id="id43">
+<span id="id19"></span><img alt="../_images/5.1.2.2.png" src="../_images/5.1.2.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.2 </span><span class="caption-text">– Load style</span><a class="headerlink" href="#id43" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="flooded-area-land-cover-classes">
+<h3><span class="section-number">2.1.2.2. </span>Flooded area land cover classes<a class="headerlink" href="#flooded-area-land-cover-classes" title="Link to this heading"></a></h3>
+<p>In the next steps, we will do some basic preprocessing to our data by projecting the coordinate system and by limiting the land cover data to only the portion relevant to the study area using the Clip tool. This procedure is particularly useful to reduce the computational burden of managing data larger than your area of interest. You will also learn to copy and paste a style from one layer to another. With this technique, you will be able to spare time while working with data using the same styles.</p>
+<p><strong>Clip the Land Cover Layer to the area of interest</strong></p>
+<p>Import the area of interest (“EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1”) and observed event (“EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1”) layers used in <strong>lecture 3 (add link)</strong>. We will start by reprojecting the area of interest layer layer (<a class="reference internal" href="#id20"><span class="std std-numref">Fig. 2.1.2.3</span></a>).
+In the <strong>Processing Toolbox</strong> search bar type “Reproject layer” <strong>(1)</strong>. Click on the <strong>Reproject layer</strong> tool <strong>(2)</strong> which will be under the <strong>Vector General</strong> group. Set “EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1” as the <strong>Input layer</strong> of the tool <strong>(3)</strong>. Under <strong>Target CRS</strong> click on the <strong>Select CRS</strong> icon <strong>(4)</strong>, a new section of the tool will open up, from there type “WGS 84 / UTM zone 32N” into the Filter search bar <strong>(5)</strong>. Click on the selected projection (WGS 84 / UTM zone 32N EPSG 32632) <strong>(6)</strong> and then on the blue arrow in order to go back to the previous tab (7). If everything was done in a correct way you should see the selected projection under <strong>Target CRS (8)</strong>. Now proceed by choosing where to save your reprojected layer and by giving it a name <strong>(9)</strong>, for the purpose of this lecture we will call it “AreaOfInterest_UTM”. Once done click on <strong>Run (10)</strong>. Repeat this procedure by setting as <strong>Input layer</strong> the “EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1” layer, this second output will be called “ObservedEvent_UTM”.</p>
+<p>..warning:: Make sure that both output files are saved with the .shp extension.</p>
+<figure class="align-center" id="id44">
+<span id="id20"></span><img alt="../_images/5.1.2.3.png" src="../_images/5.1.2.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.3 </span><span class="caption-text">– Reproject Vector Layers</span><a class="headerlink" href="#id44" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>We will now reproject the land cover layer. Click on Raster <strong>(1)</strong>, Projection <strong>(2)</strong> and then select <strong>Warp (Reproject) (3)</strong>. Set “U2018_CLC2018_V2020_20u1.tif” as the <strong>Input layer</strong> of the tool <strong>(4)</strong>. Now we want to set <strong>Target CRS</strong> as “WGS 84 / UTM zone 32N EPSG 32632”, to do so you can click on the drop down menu <strong>(5)</strong>, if you recently used this CRS it will appear in the menu allowing you to select it. Otherwise click on the <strong>Select CRS</strong> icon <strong>(6)</strong> and search for it in the same way as shown in <a class="reference internal" href="#id21"><span class="std std-numref">Fig. 2.1.2.4</span></a> . Now proceed by choosing where to save your reprojected layer and by giving it a name <strong>(7)</strong>, for the purpose of this lecture we will call it “LC_UTM”. Once done click on <strong>Run (8)</strong>.
+..warning:: Make sure that the output file is saved with the .tiff extension.</p>
+<figure class="align-center" id="id45">
+<span id="id21"></span><img alt="../_images/5.1.2.4.png" src="../_images/5.1.2.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.4 </span><span class="caption-text">– Reproject Raster Layers</span><a class="headerlink" href="#id45" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Clip the Land Cover Layer to the area of interest</strong></p>
+<p>You can notice that the downloaded land cover data includes a way wider area than the one we are interested in. To tackle this issue, we can “cut out” the data to the portion of interest. Now we can proceed with the clipping procedure (<a class="reference internal" href="#id22"><span class="std std-numref">Fig. 2.1.2.5</span></a>) . Click on <strong>Raster (1)</strong> then on <strong>Extraction (2)</strong> and on <strong>Clip Raster by Mask Layer… (3)</strong>. In the menu that appears, set the land cover layer as the <strong>Input layer (4)</strong> and the area of interest layer as the <strong>Mask layer (5)</strong>. Once done, click on <strong>Run (6)</strong>.</p>
+<figure class="align-center" id="id46">
+<span id="id22"></span><img alt="../_images/5.1.2.5.png" src="../_images/5.1.2.5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.5 </span><span class="caption-text">– Clip data</span><a class="headerlink" href="#id46" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Apply Style</strong></p>
+<p>After the previous steps, you should have lost the original layer style. To retrieve it, you can copy the style of another layer. To do so, right-click on the layer you want to take the style from (“U2018_CLC2018_V2020_20u1”) <strong>(1)</strong> (<a class="reference internal" href="#id23"><span class="std std-numref">Fig. 2.1.2.6</span></a>) , select <strong>Style (2)</strong>, <strong>Copy Style (3)</strong> and click on <strong>All Style Categories (4)</strong>, as displayed in (Fig. 5.1.2.2.2b).</p>
+<figure class="align-center" id="id47">
+<span id="id23"></span><img alt="../_images/5.1.2.6.png" src="../_images/5.1.2.6.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.6 </span><span class="caption-text">– Copy style</span><a class="headerlink" href="#id47" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Now we need to paste the style we just copied to our clipped layer (<a class="reference internal" href="#id24"><span class="std std-numref">Fig. 2.1.2.7</span></a>) . Right-click on the clipped layer <strong>(1)</strong>, select <strong>Style (2)</strong>, <strong>Paste Style (3)</strong> and click on <strong>All Style Categories (4)</strong>.</p>
+<figure class="align-center" id="id48">
+<span id="id24"></span><img alt="../_images/5.1.2.7.png" src="../_images/5.1.2.7.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.7 </span><span class="caption-text">– Paste style</span><a class="headerlink" href="#id48" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Save Layer</strong>
+As you can see, when we clipped the layer, we did not save it, this is also denoted by the icon that appears on the left of temporary layers (<a class="reference internal" href="#id25"><span class="std std-numref">Fig. 2.1.2.8</span></a>) . Since the layer is temporary it will be lost once QGIS will be closed. This can be a very useful feature in case we do not need to use that layer anymore but it is not our case. In order to save the Clipped layer we can right click on it <strong>(1)</strong>, go on <strong>Export (2)</strong>, <strong>Save As… (3)</strong>. Now proceed by choosing where to save your layer and by giving it a name <strong>(4)</strong>, for the purpose of this lecture we will call it “LC_UTM_Clipped”. Once done click on <strong>OK (5)</strong>.</p>
+<figure class="align-center" id="id49">
+<span id="id25"></span><img alt="../_images/5.1.2.8.png" src="../_images/5.1.2.8.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.8 </span><span class="caption-text">– Paste style</span><a class="headerlink" href="#id49" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="part5.html" class="btn btn-neutral float-left" title="2. Retrieving Copernicus Land Monitoring Service (CLMS) data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../part7/part7.html" class="btn btn-neutral float-right" title="3. Computing land Cover affected by flooding" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, GEOLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
