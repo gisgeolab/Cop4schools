@@ -13,8 +13,10 @@ COPERNICUS4Schools
    :numbered:
 
    ./part1/part1
-
-
+   ./part5/part5
+   ./part7/part7
+   ./part8/part8
+   
 .. toctree::
    :hidden:
 

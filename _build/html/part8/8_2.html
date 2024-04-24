@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.2. Number of People affected by flooding &mdash; COPERNICUS4Schools  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="4.1. Visualization of GHSL-JRC population data in QGIS" href="8_1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            COPERNICUS4Schools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part1/part1.html">1. Introduction to GIS (Geographic Information System)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part5/part5.html">2. Retrieving Copernicus Land Monitoring Service (CLMS) data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part7/part7.html">3. Computing land Cover affected by flooding</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="part8.html">4. Population affected by flooding</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="8_1.html">4.1. Visualization of GHSL-JRC population data in QGIS</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.2. Number of People affected by flooding</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COPERNICUS4Schools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="part8.html"><span class="section-number">4. </span>Population affected by flooding</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">4.2. </span>Number of People affected by flooding</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/part8/8_2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="number-of-people-affected-by-flooding">
+<span id="id1"></span><h1><span class="section-number">4.2. </span>Number of People affected by flooding<a class="headerlink" href="#number-of-people-affected-by-flooding" title="Link to this heading"></a></h1>
+<p>The model we are going to use is reported in <a class="reference internal" href="#id2"><span class="std std-numref">Fig. 4.2.1</span></a> .</p>
+<figure class="align-center" id="id9">
+<span id="id2"></span><img alt="../_images/8.2.1.png" src="../_images/8.2.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.2 </span><span class="caption-text">– Model Designer - final model</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The first step when building a model is to set the input layers (<a class="reference internal" href="#id3"><span class="std std-numref">Fig. 4.2.2</span></a>) . In this case we will use the Population Raster Dataset (“Pop_UTM_Clipped”) <strong>(1)</strong> and the layer with the flooded area (“ObservedEvent_UTM”) <strong>(2)</strong>. Both inputs have been set as <strong>Mandatory</strong>.</p>
+<figure class="align-center" id="id10">
+<span id="id3"></span><img alt="../_images/8.2.2.png" src="../_images/8.2.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.3 </span><span class="caption-text">– Model Designer - input layers</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The next step (<a class="reference internal" href="#id4"><span class="std std-numref">Fig. 4.2.3</span></a>) involves the geometry fix algorithm. You can notice that the Input of this block is connected to the flooded area layer, this will tell that the geometry fix is applied over that layer. The geometry fix  algorithm <strong>(1)</strong> is used to repair issues or errors that can emerge when working with vector data, especially when conversion or digitalizations procedures are applied.</p>
+<figure class="align-center" id="id11">
+<span id="id4"></span><img alt="../_images/8.2.3.png" src="../_images/8.2.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.4 </span><span class="caption-text">– Model Designer - geometry fix</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The next step is depicted in (<a class="reference internal" href="#id5"><span class="std std-numref">Fig. 4.2.4</span></a>).  At first we will use the <strong>Clip raster by mask layer</strong> tool <strong>(1)</strong> in order to reduce the computational burden of the following operations. As you can see the input of this block is composed of the Corine Land Cover layer, which is the layer we are going to clip, and the flooded area layer with fixed geometries. As a second step we will convert the obtained raster layer to a vector format <strong>(2)</strong>, with this procedure each cell of the raster will become a polygon. In this procedure we add a column to maintain the information (the number of people in that cell) regarding that cell.</p>
+<figure class="align-center" id="id12">
+<span id="id5"></span><img alt="../_images/8.2.4.png" src="../_images/8.2.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.5 </span><span class="caption-text">– Model Designer - clip and polygonize</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>In (<a class="reference internal" href="#id6"><span class="std std-numref">Fig. 4.2.5</span></a>) , the next step is shown. This step involves cutting the Population layer converted to vector over the flooded area <strong>(1)</strong>.</p>
+<figure class="align-center" id="id13">
+<span id="id6"></span><img alt="../_images/8.2.5.png" src="../_images/8.2.5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.6 </span><span class="caption-text">– Model Designer - clip</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The last step is depicted in (<a class="reference internal" href="#id7"><span class="std std-numref">Fig. 4.2.6</span></a>) and involves the <strong>Aggregate</strong> algorithm <strong>(1)</strong>. This algorithm combines features based on a spatial relationship or another attribute, in this particular case we use the aggregate algorithm to aggregate all features since the input of this block is composed of a vector layer with only the number of population features. Finally, the output of the model is the “Affected_Population” layer.</p>
+<figure class="align-center" id="id14">
+<span id="id7"></span><img alt="../_images/8.2.6.png" src="../_images/8.2.6.png" />
+<figcaption>
+<p><span class="caption-text">– Model Designer - aggregate and population computation</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Click on the green player button to run the algorithm <strong>(1)</strong> (<a class="reference internal" href="#id8"><span class="std std-numref">Fig. 4.2.1</span></a>) . You will be asked to choose the layer that will represent the input to the model. Set the flooded_area field as “ObservedEvent_UTM” <strong>(2)</strong> and the Population Raster Dataset field as “Pop_UTM_Clipped” <strong>(3)</strong>. Once done, click on Run <strong>(4)</strong>.</p>
+<figure class="align-center" id="id15">
+<span id="id8"></span><img alt="../_images/8.2.7.png" src="../_images/8.2.7.png" />
+<figcaption>
+<p><span class="caption-text">– Model Designer - Run Model</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="8_1.html" class="btn btn-neutral float-left" title="4.1. Visualization of GHSL-JRC population data in QGIS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, GEOLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

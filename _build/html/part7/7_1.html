@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.1. Insights into the land cover classes which are most affected by flood &mdash; COPERNICUS4Schools  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3.2. Percentage of each land cover class affected by the flooding" href="7_2.html" />
+    <link rel="prev" title="3. Computing land Cover affected by flooding" href="part7.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            COPERNICUS4Schools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part1/part1.html">1. Introduction to GIS (Geographic Information System)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part5/part5.html">2. Retrieving Copernicus Land Monitoring Service (CLMS) data</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="part7.html">3. Computing land Cover affected by flooding</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.1. Insights into the land cover classes which are most affected by flood</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_2.html">3.2. Percentage of each land cover class affected by the flooding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_3.html">3.3. Obtained results</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part8/part8.html">4. Population affected by flooding</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COPERNICUS4Schools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="part7.html"><span class="section-number">3. </span>Computing land Cover affected by flooding</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1. </span>Insights into the land cover classes which are most affected by flood</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/part7/7_1.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="insights-into-the-land-cover-classes-which-are-most-affected-by-flood">
+<span id="id1"></span><h1><span class="section-number">3.1. </span>Insights into the land cover classes which are most affected by flood<a class="headerlink" href="#insights-into-the-land-cover-classes-which-are-most-affected-by-flood" title="Link to this heading"></a></h1>
+<p>In this lecture we need to import into QGIS the following layers computed in <a class="reference internal" href="../part5/5_1.html#id1"><span class="std std-ref">lecture 5</span></a>:</p>
+<ul class="simple">
+<li><p>LC_UTM_Clipped</p></li>
+<li><p>ObservedEvent_UTM</p></li>
+</ul>
+<p>In (<a class="reference internal" href="#id2"><span class="std std-numref">Fig. 3.1.1</span></a>) we can see the thematic classes composing the “LC_UTM_Clipped” layer. If your layer has the default layer style and you want to add the style shown here you can follow the steps of  <a class="reference internal" href="../part5/5_1.html#id18"><span class="std std-ref">chapter</span></a>.</p>
+<figure class="align-center" id="id4">
+<span id="id2"></span><img alt="../_images/7.1.1.png" src="../_images/7.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.1 </span><span class="caption-text">– CLC thematic classes</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>In order to have insights into the land cover classes which are most affected by the flooding event, we have to activate both imported layers. It is possible to notice that the observed event layer overlaps with the land cover one. On further inspection, it seems that overlapping mostly occurs across the area with the most common land cover thematic class, but which is this class? To answer this question in a simple way, we can use the <strong>Identify Features</strong> tool (<a class="reference internal" href="#id3"><span class="std std-numref">Fig. 3.1.2</span></a>) . Click on the layer you are interested in to identify the features, namely “LC_UTM_Clipped” <strong>(1)</strong>. Click on the <strong>Identify Features</strong> tool in the toolbar <strong>(2)</strong>, then click on any point in the area with the most common land cover (Color Hex: #e6e600 / RGB: 230-230-0) <strong>(3)</strong>: we will see that our selection is highlighted in red. Now we can read the <strong>Band 1</strong> value field in the <strong>Identify Results menu (4)</strong>. The obtained value is equal to 14 which corresponds to the Rice field class. You can verify it by opening the style of the layer.</p>
+<figure class="align-center" id="id5">
+<span id="id3"></span><img alt="../_images/7.1.2.png" src="../_images/7.1.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.2 </span><span class="caption-text">– identify tool in QGIS</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="part7.html" class="btn btn-neutral float-left" title="3. Computing land Cover affected by flooding" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="7_2.html" class="btn btn-neutral float-right" title="3.2. Percentage of each land cover class affected by the flooding" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, GEOLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
