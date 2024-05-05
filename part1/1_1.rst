@@ -24,8 +24,8 @@ GIS are composed of several elements (:numref:`1.1.1`):
 The suggested first step to novice users for learning  GIS  is  through  desktop  GIS applications (:numref:`1.1.2`) . Desktop  GIS  are  software  applications, running  on  workstations  and  laptops, allowing users to access information using spatial  logic  and  methods,  to  modify  or create  from  scratch  spatial  data,  and  to visualise the results as a map. They also Provide graphical user interfaces and facilitate cooperation among users through  the  adoption  of  standard formats (exchange spatial data files but also complete mapping projects and analysis procedures). They also offer support  for network  connection enabling  access  to  online  GIS resources.
 There exist many models of software development and distribution such as freeware, shareware, FOSS etc. and, being users, it is fundamental to know the difference between them. Here we will see two of the most common:
 
-+ A proprietary GIS software is copyrighted and has limits against distribution and modification that are imposed by its owner. Generally, the use of proprietary GIS software is allowed to end-users with payment licenses.
-+ A FOSS (free and open-source software) GIS is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software to anyone and for any purpose. These rights are guaranteed to any users free of charge
++ A proprietary GIS software is copyrighted and has limits against distribution and modification that are imposed by its owner. Generally, the use of proprietary GIS software is allowed to end-users with payment license 
++ A FOSS (free and open-source software) GIS is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software to anyone and for any purpose. These rights are guaranteed to any users free of charge 
 
 .. _1.1.2:
 

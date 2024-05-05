@@ -9,7 +9,7 @@ In this lecture we need to import into QGIS the following layers:
 + ObservedEvent_UTM
 + AreaOfInterest_UTM
 
-The first one has been downloaded in lecture 6 while the second and third one have been obtained in :ref:`lecture 5 <5.1>` .
+The first one has been downloaded in :ref:`lecture 6 <6.1>` while the second and third one have been obtained in :ref:`lecture 5 <5.1>` .
 
 Data preprocessing
 ------------------

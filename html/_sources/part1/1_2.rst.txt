@@ -106,13 +106,22 @@ To access the installed plugin click on **Web (1)** and move your mouse over **Q
 
    -- Lunch QuickMapServices plugin and import background
 
-Layer CRS (Coordinate Reference System) and Project CRS
-*******************************************************
-One of the most important things to know while working with georeferenced data is the :ref:`coordinate reference system <CRF>` they belong to. Different layers can belong to different CRS. In order to check the CRS of a layer right click on it **(1)** and click on **Layer CRS (2)**. A drop down menu will open where you can read it **(3)**. There are many ways to check the project CRS, the easiest one is to rest your mouse on the icon on the left of the **Messages** icon present in the status bar, waiting a few seconds will make your current project CRS pop-up **(4)**. (:numref:`1.2.2.6`)
+In the event that some maps are not shown, you can activate them by clicking on **Web** in the toolbar **(1)** (:numref:`1.2.2.6`) , and then moving your mouse over **QuickMapService (2)**. Click on **Settings (3)**. Open the **Visibility** tab **(4)**. From this tab you can check the box of the maps provider that you miss, in this case: “google” **(5)**. Once done, click on Save **(6)**.
 
 .. _1.2.2.6:
 
 .. figure:: /img/1/1.2.2.6.png
+   :align: center
+
+   -- Activate QuickMapService Maps
+
+Layer CRS (Coordinate Reference System) and Project CRS
+*******************************************************
+One of the most important things to know while working with georeferenced data is the :ref:`coordinate reference system <CRF>` they belong to. Different layers can belong to different CRS. In order to check the CRS of a layer right click on it **(1)** and click on **Layer CRS (2)**. A drop down menu will open where you can read it **(3)**. There are many ways to check the project CRS, the easiest one is to rest your mouse on the icon on the left of the **Messages** icon present in the status bar, waiting a few seconds will make your current project CRS pop-up **(4)**. (:numref:`1.2.2.7`)
+
+.. _1.2.2.7:
+
+.. figure:: /img/1/1.2.2.7.png
    :align: center
    
    -- Project CRS and Layer CRS
@@ -121,23 +130,25 @@ One of the most important things to know while working with georeferenced data i
 Zoom-in to your city
 ********************
 
-Try now to find your city by zooming in the map canvas. (:numref:`1.2.2.7`)
-
-.. _1.2.2.7:
-
-.. figure:: /img/1/1.2.2.7.png
-   :align: center
-
-   -- Zoom-in to your city
-
-Save project
-************
-
-Saving the QGIS project can be done by clicking on **Project (1)** on the top left corner of the toolbar and selecting **Save (2)** from the drop down menu, as illustrated in  :numref:`1.2.2.8`.
+Try now to find your city by zooming in the map canvas. (:numref:`1.2.2.8`)
 
 .. _1.2.2.8:
 
 .. figure:: /img/1/1.2.2.8.png
+   :align: center
+
+   -- Zoom-in to your city
+
+.. _Save project:
+
+Save project
+************
+
+Saving the QGIS project can be done by clicking on **Project (1)** on the top left corner of the toolbar and selecting **Save (2)** from the drop down menu, as illustrated in  :numref:`1.2.2.9`.
+
+.. _1.2.2.9:
+
+.. figure:: /img/1/1.2.2.9.png
    :align: center
    
    -- Save QGIS project

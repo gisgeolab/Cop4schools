@@ -30,7 +30,7 @@ The next step (:numref:`8.2.3`) involves the geometry fix algorithm. You can not
 
    -- Model Designer - geometry fix
 
-The next step is depicted in (:numref:`8.2.4`).  At first we will use the **Clip raster by mask layer** tool **(1)** in order to reduce the computational burden of the following operations. As you can see the input of this block is composed of the Corine Land Cover layer, which is the layer we are going to clip, and the flooded area layer with fixed geometries. As a second step we will convert the obtained raster layer to a vector format **(2)**, with this procedure each cell of the raster will become a polygon. In this procedure we add a column to maintain the information (the number of people in that cell) regarding that cell.
+The next step is depicted in (:numref:`8.2.4`).  At first we will use the **Clip raster by mask layer** tool **(1)** in order to reduce the computational burden of the following operations. As you can see the input of this block is composed of the population layer, which is the layer we are going to clip, and the flooded area layer with fixed geometries. As a second step we will convert the obtained raster layer to a vector format **(2)**, with this procedure each cell of the raster will become a polygon. In this procedure we add a column to maintain the information (the number of people in that cell) regarding that cell.
 
 .. _8.2.4:
 
@@ -67,3 +67,5 @@ Click on the green player button to run the algorithm **(1)** (:numref:`8.2.7`) 
    :align: center
 
    -- Model Designer - Run Model
+
+The obtained results show that 823 people were involved in the flood event.
