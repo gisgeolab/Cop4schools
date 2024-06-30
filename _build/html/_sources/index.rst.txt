@@ -20,6 +20,7 @@ COPERNICUS4Schools
    ./part6/part6
    ./part7/part7
    ./part8/part8
+   credits
 
 .. toctree::
    :hidden:

@@ -20,11 +20,12 @@ COPERNICUS4Schools
    ./part6/part6
    ./part7/part7
    ./part8/part8
-..   
- .. toctree::
+   credits
+
+.. toctree::
    :hidden:
 
-
+   credits
 
 Co-funded by the European Union
 
@@ -32,6 +33,6 @@ Co-funded by the European Union
 
 .. admonition:: Disclaimer
 
-   Co-funded by the European Union’s Caroline Herschel Framework Partnership Agreement on Copernicus User Uptake under grant agreement No FPA 275/G/GRO/COPE/17/10042, project FPCUP (Framework Partnership Agreement on Copernicus User Uptake).
+   Co-funded by the European Union’s Caroline Herschel Framework Partnership Agreement on Copernicus User Uptake under grant agreement No FPA 275/G/GRO/COPE/17/10042, project FPCUP (Framework Partnership Agreement on Copernicus User Uptake). This publication reflects the views only of the authors, and the Commission cannot be held responsible for any use which may be made of the information contained therein.
 
 License `Creative Commons — Attribution-NonCommercial-ShareAlike 3.0 Unported — CC-By-NC-SA <https://creativecommons.org/licenses/by-nc-sa/3.0/>`_

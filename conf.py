@@ -20,6 +20,7 @@ from docutils.nodes import Element
 import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
+# It will be overridden by the CSS
 
 project = "COPERNICUS4Schools"
 copyright = "2021, GEOLab"
@@ -69,6 +70,11 @@ html_theme = "sphinx_rtd_theme"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = [r"html\_static"]
+
+# Custom CSS files
+html_css_files = [
+    "css/custom.css",
+]
 
 # code for making links open in a new tab
 
