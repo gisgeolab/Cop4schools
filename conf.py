@@ -22,9 +22,9 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 # It will be overridden by the CSS
 
-# project = "COPERNICUS4Schools"
-# copyright = "2021, GEOLab"
-# author = "GEOLab"
+project = "COPERNICUS4Schools"
+copyright = "2024, GEOLab"
+author = "GEOLab"
 
 
 # -- General configuration ---------------------------------------------------
