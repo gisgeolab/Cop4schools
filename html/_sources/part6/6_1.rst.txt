@@ -246,7 +246,7 @@ Download the population dataset
 Open the `GHSL JRC <https://ghsl.jrc.ec.europa.eu/download.php?ds=pop>`_
 web page (:numref:`6.1.1.23`) and select the **GHS_POP Product (1)**. Set **2020** in the **Epoch** field **(2)**, **WGS84** as **Coord. system (3)** and **3 arcsec** as **Resolution (4)**. Find the tile (footprint of the image) that covers the area of interest “Vercelli”, the desired tile is highlighted inside the world map **(5)**, and use the zoomed image as the reference **(6)**. Before clicking on the selected tile check the details **(7)** they need to correspond to the Tile ID: “R5_C19” **(8)**. Click on the footprint with Tile ID: “R5_C19” to start the download.
 
-..note:: downloaded data will be in .zip format, unzip the folder.
+.. note:: downloaded data will be in .zip format, unzip the folder.
 
 .. _6.1.1.23:
 

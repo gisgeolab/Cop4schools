@@ -30,7 +30,7 @@ set cloud coverage to 40% **(2)**;
 set the **TIME RANGE** to 28-09-2020 to 04-10-2020 (dd-mm-yyyy), in this case there is no need to modify the hours and minutes range **(3)**.
 This procedure will narrow down the data that will be shown to us. Given the size of the Copernicus Browser entire dataset it would have been impossible to find the data we are interested in without this procedure. Then, set the area you are interested in by clicking on **(4)** and choose the “Upload” method **(5)**. This will allow downloading data relative to a limited area reducing the space needed to store them. At this point click on the area surrounded by the gray dotted line **(6)** and look through your files searching for: “EMSR468_AOI05_DEL_PRODUCT_areaOFInterestA_r1_v1.json” **(7)** (this file was downloaded in :ref:`lecture 2 <2.1>` . A .json file (JavaScript Object Notation) is a flexible and lightweight format used to store various information that can be easily converted into JavaScript objects. As soon as the area has been uploaded click on Open **(8)**. Alternatively, you can just drag and drop the file in the designated area **(6)**. 
 
-..note:: You can read more about JavaScript Object Notation `here <https://www.w3schools.com/js/js_json_intro.asp>`_ .
+.. note:: You can read more about JavaScript Object Notation `here <https://www.w3schools.com/js/js_json_intro.asp>`_ .
 
 .. _4.1.2.2:
 
@@ -52,7 +52,7 @@ View and display Sentinel-2 images in Copernicus Browser
 --------------------------------------------------------
 
 You will now see the image tiles covering the AOI (:numref:`4.1.3.1`) . We need to look for a product that totally covers the uploaded AOI. The characteristics of the desired product are illustrated in (:numref:`4.1.3.2`) . You can select it either by clicking directly on **Visualize** from the sidebar **(1)** or by selecting the image tile that better covers the AOI **(2)** and then, clicking on **Visualize (3)** inside the spawning window.
-..note:: If the area we are interested in is not completely covered by a single tile it is also possible to download more than a tile and combine them through a procedure called data mosaicking.
+.. note:: If the area we are interested in is not completely covered by a single tile it is also possible to download more than a tile and combine them through a procedure called data mosaicking.
 
 .. _4.1.3.1:
 
@@ -113,7 +113,7 @@ Clicking on the icon **(1)** for both images (:numref:`4.1.4.3`) , enables the S
 
 As shown in :numref:`4.1.4.4` set the **Effect (1)** from the default value of **Split** to **Opacity**, now, by using the **interactive bar (2)** you can decrease and increase the transparency. 
 
-..note:: Using the **Split** option for the comparative visualization will allow you, through the use of the same **interactive bar**, to hide and illustrate the bottom layer (like you are flipping and turning a book page from right to left).
+.. note:: Using the **Split** option for the comparative visualization will allow you, through the use of the same **interactive bar**, to hide and illustrate the bottom layer (like you are flipping and turning a book page from right to left).
 
 .. _4.1.4.4:
 
@@ -135,7 +135,7 @@ We can follow the comparison in Copernicus Browser in the :ref:`last section <Im
 
    -- Activate Timelapse in Copernicus Browser
 
-..warning:: The time-lapse will illustrate the last visualization that has been used. Be sure you are visualizing the NDWI before proceeding.
+.. warning:: The time-lapse will illustrate the last visualization that has been used. Be sure you are visualizing the NDWI before proceeding.
 
 A new window in which you can view and download the time-lapse animation will spawn. Here (:numref:`4.1.5.2`) a couple of parameters must be set:
 
@@ -160,7 +160,7 @@ Download Sentinel-2 images
 
 Now that you have closed the time-lapse click on **(1)**, to download the image as shown in :numref:`4.1.6.1` . Choose the analytical panel **(2)** to set the image format to TIFF **(3)** (Tagged Image File Format). The .tiff format is a popular file format used to store raster data, it allows lossless compression (there is no loss in image quality while compressing the file) and storing images with different color depths.
 
-..note::  more information about .tiff format can be found `here <https://web.archive.org/web/20210108172855/https://www.adobe.io/open/standards/TIFF.html>`_ . 
+.. note::  more information about .tiff format can be found `here <https://web.archive.org/web/20210108172855/https://www.adobe.io/open/standards/TIFF.html>`_ . 
 
 Set the image resolution to **HIGH (4)** and the coordinate system to WGS84 **(5)**. At this point you can choose the layers **(6)** and bands (for this lecture select all of them) **(7)** that you like to save, remember that by toggling **Clip extra bands (8)** only the first 3 bands will be included in the image. Once you are done, you can download your images through the **Download** button (9).
 

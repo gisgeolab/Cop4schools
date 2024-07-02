@@ -7,7 +7,7 @@
   <title>5.1. The CLMS &mdash; COPERNICUS4Schools  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=380b4f77" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=6d2570a0" />
 
   
   <!--[if lt IE 9]>
@@ -263,7 +263,10 @@ A login is required for data downloading from CLMS.</p>
 <section id="load-style">
 <h3><span class="section-number">5.1.2.1. </span>Load Style<a class="headerlink" href="#load-style" title="Link to this heading"></a></h3>
 <p>A file containing the style of the CLC layer has been downloaded as well, and it can be easily imported in QGIS as follows (<a class="reference internal" href="#id19"><span class="std std-numref">Fig. 5.1.2.2</span></a>) . First, right-click on the layer you have just imported in QGIS <strong>(1)</strong>, go to <strong>Properties (2)</strong> and open the <strong>Symbology</strong> menu <strong>(3)</strong>. In the bottom right corner click on <strong>Style (4)</strong> and select the <strong>Load Style…</strong> option <strong>(5)</strong>. In the Database Styles Manager menu that will pop up, click on the three-dotted icon <strong>(6)</strong>, the path to find your data should look like this: “…Results65791EEAU2018_CLC2018_V2020_20u1_raster100m_tiled_docInfoLegendRasterclc_legend_qgis_raster.qml” except for the first part where you need to find where the Results file has been saved and the product identifier that can be different. The .qml format is human-readable and can be easily edited using a text editor or within QGIS itself where it is used to store information about layers style. In general this file format is used to define layouts of the user interface like the position of images and buttons. Once you have imported the file, click on <strong>Load Style (7)</strong> and <strong>OK (8)</strong>.</p>
-<p>..note:: You can read more about .qml format <a class="reference external" href="https://doc.qt.io/qt-6/qtqml-documents-topic.html" rel="noopener noreferrer" target="_blank">here</a> .</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can read more about .qml format <a class="reference external" href="https://doc.qt.io/qt-6/qtqml-documents-topic.html" rel="noopener noreferrer" target="_blank">here</a> .</p>
+</div>
 <figure class="align-center" id="id43">
 <span id="id19"></span><img alt="../_images/5.1.2.2.png" src="../_images/5.1.2.2.png" />
 <figcaption>
@@ -277,7 +280,10 @@ A login is required for data downloading from CLMS.</p>
 <p><strong>Clip the Land Cover Layer to the area of interest</strong></p>
 <p>Import the area of interest (“EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1”) and observed event (“EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1”) layers used in <a class="reference internal" href="../part3/3_1.html#id1"><span class="std std-ref">lecture 3</span></a>. We will start by reprojecting the area of interest layer layer (<a class="reference internal" href="#id20"><span class="std std-numref">Fig. 5.1.2.3</span></a>).
 In the <strong>Processing Toolbox</strong> search bar type “Reproject layer” <strong>(1)</strong>. Click on the <strong>Reproject layer</strong> tool <strong>(2)</strong> which will be under the <strong>Vector General</strong> group. Set “EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1” as the <strong>Input layer</strong> of the tool <strong>(3)</strong>. Under <strong>Target CRS</strong> click on the <strong>Select CRS</strong> icon <strong>(4)</strong>, a new section of the tool will open up, from there type “WGS 84 / UTM zone 32N” into the Filter search bar <strong>(5)</strong>. Click on the selected projection (WGS 84 / UTM zone 32N EPSG 32632) <strong>(6)</strong> and then on the blue arrow in order to go back to the previous tab (7). If everything was done in a correct way you should see the selected projection under <strong>Target CRS (8)</strong>. Now proceed by choosing where to save your reprojected layer and by giving it a name <strong>(9)</strong>, for the purpose of this lecture we will call it “AreaOfInterest_UTM”. Once done click on <strong>Run (10)</strong>. Repeat this procedure by setting as <strong>Input layer</strong> the “EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1” layer, this second output will be called “ObservedEvent_UTM”.</p>
-<p>..warning:: Make sure that both output files are saved with the .shp extension.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure that both output files are saved with the .shp extension.</p>
+</div>
 <figure class="align-center" id="id44">
 <span id="id20"></span><img alt="../_images/5.1.2.3.png" src="../_images/5.1.2.3.png" />
 <figcaption>
@@ -285,7 +291,7 @@ In the <strong>Processing Toolbox</strong> search bar type “Reproject layer”
 </figcaption>
 </figure>
 <p>We will now reproject the land cover layer. Click on Raster <strong>(1)</strong>, Projection <strong>(2)</strong> and then select <strong>Warp (Reproject) (3)</strong>. Set “U2018_CLC2018_V2020_20u1.tif” as the <strong>Input layer</strong> of the tool <strong>(4)</strong>. Now we want to set <strong>Target CRS</strong> as “WGS 84 / UTM zone 32N EPSG 32632”, to do so you can click on the drop down menu <strong>(5)</strong>, if you recently used this CRS it will appear in the menu allowing you to select it. Otherwise click on the <strong>Select CRS</strong> icon <strong>(6)</strong> and search for it in the same way as shown in <a class="reference internal" href="#id21"><span class="std std-numref">Fig. 5.1.2.4</span></a> . Now proceed by choosing where to save your reprojected layer and by giving it a name <strong>(7)</strong>, for the purpose of this lecture we will call it “LC_UTM”. Once done click on <strong>Run (8)</strong>.
-..warning:: Make sure that the output file is saved with the .tiff extension.</p>
+.. warning:: Make sure that the output file is saved with the .tiff extension.</p>
 <figure class="align-center" id="id45">
 <span id="id21"></span><img alt="../_images/5.1.2.4.png" src="../_images/5.1.2.4.png" />
 <figcaption>
