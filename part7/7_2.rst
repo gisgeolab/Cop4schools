@@ -48,7 +48,7 @@ The next step is depicted in :numref:`7.2.5`. At first we will use the **Clip ra
 
    -- Model Designer - clip and polygonize
 
-In :numref:'7.2.6' , the next two steps are shown. The first one involves cutting the land cover layer converted to a vector over the flooded area **(1)**. Then we apply the Dissolve algorithm **(2)** which is used to merge adjacent or overlapping polygons of the layer set as input, based on an attribute. In this case, we combine polygons based on the cell code.
+In :numref:`7.2.6` , the next two steps are shown. The first one involves cutting the land cover layer converted to a vector over the flooded area **(1)**. Then we apply the Dissolve algorithm **(2)** which is used to merge adjacent or overlapping polygons of the layer set as input, based on an attribute. In this case, we combine polygons based on the cell code.
 
 .. _7.2.6:
 
@@ -68,7 +68,7 @@ Now it is necessary to compute the area of the combined polygons **(1)** (:numre
 
    -- Model Designer - percentage computation
 
-In the following two steps, shown in :numref:'7.2.8' , we use the field calculator, initially to change the feature code to the code corresponding to the correct land cover class  **(1)** and then to add a field continuing the label for each code **(2)**. The last block of the model **(3)** represents the output and it will be added to the **Layers** once the computation is done.
+In the following two steps, shown in :numref:`7.2.8` , we use the field calculator, initially to change the feature code to the code corresponding to the correct land cover class  **(1)** and then to add a field continuing the label for each code **(2)**. The last block of the model **(3)** represents the output and it will be added to the **Layers** once the computation is done.
 
 .. _7.2.8:
 

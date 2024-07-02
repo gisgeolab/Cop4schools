@@ -200,7 +200,7 @@ Load Style
 **********
 A file containing the style of the CLC layer has been downloaded as well, and it can be easily imported in QGIS as follows (:numref:`5.1.2.2`) . First, right-click on the layer you have just imported in QGIS **(1)**, go to **Properties (2)** and open the **Symbology** menu **(3)**. In the bottom right corner click on **Style (4)** and select the **Load Style…** option **(5)**. In the Database Styles Manager menu that will pop up, click on the three-dotted icon **(6)**, the path to find your data should look like this: “...\Results\65791\EEA\U2018_CLC2018_V2020_20u1_raster100m_tiled_doc\Info\Legend\Raster\clc_legend_qgis_raster.qml” except for the first part where you need to find where the Results file has been saved and the product identifier that can be different. The .qml format is human-readable and can be easily edited using a text editor or within QGIS itself where it is used to store information about layers style. In general this file format is used to define layouts of the user interface like the position of images and buttons. Once you have imported the file, click on **Load Style (7)** and **OK (8)**.
 
-..note:: You can read more about .qml format `here <https://doc.qt.io/qt-6/qtqml-documents-topic.html>`_ .
+.. note:: You can read more about .qml format `here <https://doc.qt.io/qt-6/qtqml-documents-topic.html>`_ .
 
 .. _5.1.2.2:
 
@@ -219,7 +219,7 @@ In the next steps, we will do some basic preprocessing to our data by projecting
 Import the area of interest (“EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1”) and observed event (“EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1”) layers used in :ref:`lecture 3 <3.1>`. We will start by reprojecting the area of interest layer layer (:numref:`5.1.2.3`). 
 In the **Processing Toolbox** search bar type “Reproject layer” **(1)**. Click on the **Reproject layer** tool **(2)** which will be under the **Vector General** group. Set “EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1” as the **Input layer** of the tool **(3)**. Under **Target CRS** click on the **Select CRS** icon **(4)**, a new section of the tool will open up, from there type “WGS 84 / UTM zone 32N” into the Filter search bar **(5)**. Click on the selected projection (WGS 84 / UTM zone 32N EPSG 32632) **(6)** and then on the blue arrow in order to go back to the previous tab (7). If everything was done in a correct way you should see the selected projection under **Target CRS (8)**. Now proceed by choosing where to save your reprojected layer and by giving it a name **(9)**, for the purpose of this lecture we will call it “AreaOfInterest_UTM”. Once done click on **Run (10)**. Repeat this procedure by setting as **Input layer** the “EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1” layer, this second output will be called “ObservedEvent_UTM”.
 
-..warning:: Make sure that both output files are saved with the .shp extension.
+.. warning:: Make sure that both output files are saved with the .shp extension.
 
 .. _5.1.2.3:
 
@@ -229,7 +229,7 @@ In the **Processing Toolbox** search bar type “Reproject layer” **(1)**. Cli
    -- Reproject Vector Layers
 
 We will now reproject the land cover layer. Click on Raster **(1)**, Projection **(2)** and then select **Warp (Reproject) (3)**. Set “U2018_CLC2018_V2020_20u1.tif” as the **Input layer** of the tool **(4)**. Now we want to set **Target CRS** as “WGS 84 / UTM zone 32N EPSG 32632”, to do so you can click on the drop down menu **(5)**, if you recently used this CRS it will appear in the menu allowing you to select it. Otherwise click on the **Select CRS** icon **(6)** and search for it in the same way as shown in :numref:`5.1.2.4` . Now proceed by choosing where to save your reprojected layer and by giving it a name **(7)**, for the purpose of this lecture we will call it “LC_UTM”. Once done click on **Run (8)**.
-..warning:: Make sure that the output file is saved with the .tiff extension.
+.. warning:: Make sure that the output file is saved with the .tiff extension.
 
 .. _5.1.2.4:
 

@@ -149,7 +149,7 @@ Once an area has been selected it is possible to click on the **Histogram** tool
 By clicking on the **Draw a line** tool **(1)** (:numref:`2.1.2.5`) you can click on the maps and draw lines, of those lines you can check the length but most importantly you can click on **Elevation profile (2)** to open a graph representing the elevation with respect to the distance **(3)**.
 Another tool is the **Mark point of interest**, by clicking on it **(4)** you can then click on the map and place a marker, you can check the index change over time in the selected point by clicking on the **Statistical info/feature info Service chart** in the same way as with the **Create an area of interest** tool.
 With the **Measure** tool **(5)** it is instead possible of measuring length and areas over the maps.
-..note:: Download image, Create timelapse animation and Visualize terrain in 3D  tools will be shown respectively in lecture/chapter xxx
+.. note:: Download image, Create timelapse animation and Visualize terrain in 3D  tools will be shown respectively in lecture/chapter xxx
 
 .. _2.1.2.5:
 
