@@ -3,160 +3,163 @@
 Copernicus EMS
 ==============
 
-`Copernicus Emergency Management Service <https://emergency.copernicus.eu/>`_ (:numref:`3.1.1`) is a segment of the Copernicus programme devoted to providing detailed and accurate geo-spatial information as rapidly as possible in order to help during emergency situations by giving early warnings and aid monitoring.
-Data are collected from satellite remote sensing and combined with open source data and first end data sources.
+`Copernicus Emergency Management Service <https://emergency.copernicus.eu/>`_ (:numref:`3.1.1`) is a segment of the Copernicus program dedicated to providing detailed and accurate geo-spatial information as quickly as possible in order to help in emergency situations by providing early warnings and supporting emergency monitoring. Data are collected from satellite remote sensing and combined with open source data and first-tier sources.
 
 .. _3.1.1:
 
 .. figure:: /img/3/3.1.1.png
    :align: center
 
-   -- Rapid mapping in EMS interface
+   -- Copernicus Emergency Management Service
 
-Scrolling down the webpage (:numref:`3.1.2`) will show a list of products with a brief description of each and a link to other webpages specific to each. 
-Copernicus EMS On-Demand Mapping **(1)** is a system that can be requested only by authorized users. As the name suggests, this system provides on-demand information over a specific area anywhere in the world. General public can be informed of the activation request and is allowed to download the resulting products as all other Copernicus EMS products. Both Rapid Mapping **(2)** and Risk and Recovery Mapping **(3)** can be retrieved from the `Copernicus EMS mapping page <https://emergency.copernicus.eu/mapping/>`_ . Copernicus Rapid Mapping is meant to provide in a short time period while Copernicus Risk and Recovery Mapping is meant to contribute to prevention, preparedness, disaster risk reduction and recovery phases of emergency management and their production and does not imply immediate response.
+The service is divided into five sections (:numref:`3.1.2`): On Demand Mapping **(1)**, Wildfires **(2)**, Floods **(3)**, Droughts **(4)**, Exposure Mapping **(5)**.
 
 .. _3.1.2:
 
 .. figure:: /img/3/3.1.2.png
    :align: center
 
-   -- Copernicus EMS On-Demand Mapping
+   -- The subsections of the Copernicus EMS service.
 
-Copernicus EMS Exposure Mapping **(1)** (:numref:`3.1.3`) is a system providing data on population and on human settlements, both can be downloaded through6 the Global Human Settlement Layer (GHSL) as Population grids **(2)** and Built-up surface **(3)**.
-
-.. note:: Copernicus GHSL will be covered in :ref:`chapter 6 <6.1>`.
+The On-Demand Mapping **(1)** section provides access to data on emergencies activated over a specific area anywhere in the world. Users can be notified of the activation request and can download the resulting products like all other Copernicus EMS products (:numref:`3.1.3`). This action will be discussed in detail in the next section.
 
 .. _3.1.3:
 
 .. figure:: /img/3/3.1.3.png
    :align: center
 
-   -- Copernicus EMS Exposure Mapping
+   -- Copernicus On-Demand Mapping
 
-Copernicus EMS Early warning & monitoring **(1)** (:numref:`3.1.4`) is a system aimed to offer geospatial information based on observations and forecasting. It splits into the European Flood Awareness System (EFAS) **(2)**, the European Forest Fire Information System (EFFIS) **(3)** and the European and Global Drought Observatories (EDO) (GDO) **(4)**. Each subsection has its own website and it deals with different aspects. In particular the EFAS is aimed to support the prevention procedures in case of flooding events. EFFIS provides information about wildfires over Europe and is also supported by a group of experts scattered throughout 43 European countries. EDO and GDO provides information about drought gained through maps of indicators built combining different sources of information like soil and moisture models, precipitation measurements and satellite measures.
+The sections “Wildfires” **(2)**, “Floods” **(3)** and “Droughts” **(4)** report to specific services for each emergency, offering geospatial information based on observations and forecasts.
+The “Wildfires” section links to EFFIS - European Forest Fire Information System (:numref:`3.1.4`) the European system that provides up-to-date and reliable information on forest fires in Europe, supporting forest protection services and EU institutions, supported by a network of experts from 43 countries.
 
 .. _3.1.4:
 
 .. figure:: /img/3/3.1.4.png
    :align: center
 
-   -- Copernicus EMS Early warning & monitoring
+   -- Copernicus EMS - EFFIS
 
-From the `Copernicus Emergency Management Service <https://emergency.copernicus.eu/>`_ homepage (:numref:`3.1.5`) , it is possible to go in the **FAQ/Service Overview** section, here it is possible to download Flyers and Poster.
+The “Floods” section **(3)** leads back to the European Flood Awareness System (EFAS) page (:numref:`3.1.5`) which supports preventive measures before major flood events occur, particularly in large transnational river basins and throughout Europe in general, and to the Global Flood Awareness System (GloFAS) page which covers major flood events that are predicted and ongoing on a global scale (:numref:`3.1.6`).
 
 .. _3.1.5:
 
 .. figure:: /img/3/3.1.5.png
    :align: center
 
-   -- FAQ/Service Overview - Flyers and Posters
-
-Scrolling down the webpage will show a list of frequently asked questions (FAQ) (:numref:`3.1.6`) where it is likely to find answers to the most common questions regarding Copernicus EMS. If it is not the case it is possible to click on **Contact Support Office (1)** and the relative contact details will be shown on the right side of the screen **(2)**.
+   -- Copernicus EFAS
 
 .. _3.1.6:
 
 .. figure:: /img/3/3.1.6.png
    :align: center
 
-   -- FAQ/Service Overview - FAQ
+   -- Copernicus GloFAS
 
-The last page that is possible to reach from the main menu of the `Copernicus Emergency Management Service <https://emergency.copernicus.eu/>`_ website is called **Access to EMS data (1)** (:numref:`3.1.7`) and it is composed of a summary of all websites from which it is possible to retrieve Copernicus EMS data. Now click on **List of EMS Rapid Mapping Activations (2)**.
+
+A similar structure is also found in the section on drought phenomena **(4)**. In this case the associated services are EDO (European Drought Observatory) and GDO (Global Drought Observatory). Real-time situation, forecasts, and data access are provided through interactive maps that are a particularly effective interface in emergency situations (:numref:`3.1.7`).
 
 .. _3.1.7:
 
 .. figure:: /img/3/3.1.7.png
    :align: center
 
-   -- Access to EMS data
+   -- Interactive maps for drought at the European (EDO) and global (GDO) levels.
 
-Copernicus Rapid Mapping
-------------------------
+The Copernicus EMS Exposure Mapping **(5)** section is a system that provides population and human settlement data. Among the various functions offered (:numref:`3.1.8`), data can be downloaded through the Global Human Settlement Layer (GHSL) for different epochs, resolutions and coordinate systems (:numref:`3.1.9`).
 
-As already stated at the beginning of :ref:`chapter 3.1 <3.1>` , Copernicus Rapid Mapping (:numref:`3.1.1.1`) is one of the services provided by Copernicus EMS and consists of an on-demand service which provides geospatial information in order to support the management of the activities following an emergency.
+
+.. _3.1.8:
+
+.. figure:: /img/3/3.1.8.png
+   :align: center
+
+   -- Functions offered by Copernicus EMS Exposure Mapping.
+
+
+.. _3.1.9:
+
+.. figure:: /img/3/3.1.9.png
+   :align: center
+
+   -- Global Human Settlement Layer (GHSL).
+
+Copernicus EMS On-Demand Mapping 
+--------------------------------
+
+As already stated at the beginning of :ref:`chapter 3.1 <3.1>` , Copernicus On-demand Mapping is one of the main services of the Copernicus EMS and consists of an on-demand service that provides geospatial information to support the management of activities during and following an emergency.
+Satellite imagery and other geospatial data are used to provide a free mapping service for natural hazards, man-made emergencies, and humanitarian crises worldwide. Of course, only authorized users can request an emergency activation.
+
+In the interactive map (:numref:`3.1.1`) that is opened by clicking on the icon (:numref:`3.1.2` **(1)**), activations in progress, those being prepared, and those that have been resolved are displayed. On the left side of the **(1)** page, the type of emergency, the location of the emergency, and the stage of the emergency (ongoing, preparedness, recovery, ...) can be selected. On the right **(2)** a drop-down menu allows you to select in more detail the type of emergency: not only fires, floods and droughts, but also earthquakes, hurricanes, humanitarian crises, ....
+
+At the bottom of the interactive map **(3)** you can select the time interval in which you want to view the emergency map.
+
+It can be seen that for each activation and for each area of interest there can be more than one product.
 
 .. _3.1.1.1:
 
 .. figure:: /img/3/3.1.1.1.png
    :align: center
 
-   -- List of EMS Rapid Mapping Activations
+   -- Copernicus EMS On-Demand Mapping
 
-List of Activations
-*******************
-
-An exhaustive and continuously updated list of EMS rapid mapping activations can be found `here <https://emergency.copernicus.eu/mapping/list-of-activations-risk-and-recovery>`_ (:numref:`3.1.1.2`) . And can be reached by clicking on **List of Activations (1)**. Activations are classified by countries, dates and event type. Between the event types we can notice floods, earthquakes, wildfires and many more. Also notice that there can be more than one product per each activation and area of interest.
+Once the desired item on the map is selected, clicking on the number that appears opens a window that provides access to **"Activation Details ”** (:numref:`3.1.1.2` **(1)**).
 
 .. _3.1.1.2:
 
 .. figure:: /img/3/3.1.1.2.png
    :align: center
 
-   -- List of Activations
+   -- Activation Details On-Demand Mapping.
 
-Available Products
-******************
+The “Activations details” link (:numref:`3.1.1.3`) opens a page that contains all the information about the selected event. In addition to defining the type of event (“EVENT TYPE”), the date (“EVENT TIME”) and the geographic location (“AFFECTED COUNTRY”), the reasons why the emergency in question was activated (“ACTIVATION REASON”) are given. Finally, the list of available products appears on the left.
 
-There are four kinds of Copernicus EMS Rapid Mapping products: Reference products, First Estimate Product (FEP), Delineation products and Grading products ( we will see them in :ref:`chapter 3.1.2 <Download flooded area delineation map>` ). The first one is designed to provide information about the territory before the event while the FEP is designed to assess the most affected areas in the fastest way possible by providing the first available post-event image. In this lecture we will focus on the other two types.
+.. _3.1.1.3:
 
-.. note:: you can read more about the Rapid Mapping Portfolio by clicking on this `link <https://emergency.copernicus.eu/mapping/ems/rapid-mapping-portfolio>`_ .
+.. figure:: /img/3/3.1.1.3.png
+   :align: center
 
-**Delineation Map**
+   -- Example of data available for a selected event
 
-The aim of Delineation Maps is to give an in- depth assessment of the event impact and extent. It can also be requested to provide an update of the situation by monitoring. Those maps are derived from images acquired as soon as possible after the emergency event. Delivery times for the data can be delivered as soon as 7 hrs after the request.
+There are five types of products (`more information here <https://mapping.emergency.copernicus.eu/about/rapid-mapping-portfolio/>`_): three post-events (with the possibility of updates, called **Monitoring**), a pre-event product, and an online report that centralizes all information related to the specific activation (**Situational Reporting**).
 
-**Grading Map**
-
-These products are aimed to provide information about the damage grade, impact extent and spatial distribution. As for Delineation maps, monitoring requests can be submitted. It is important to note that this product is derived from the Delineation maps.
++ **First Estimate Product (FEP)**: provides a very quick (but rough) initial assessment of the most affected areas, based on the first available post-event image. It is used to highlight potentially affected areas, review initial specifications of requested products, or decide on possible cancellations.
++ **Delineation Products (DEL)**: assess the impact and extent of the event through images acquired as soon as possible after the disaster. They can be updated on demand to monitor the evolution of the situation.
++ **Grading Products (GRA)**: provide information on the degree of damage, its spatial distribution and extent. They are an extension of delineation products, as they include both the type of event and its extent and the damage classification. They can be updated upon request and are released along with delineation products if requested later.
++ **Reference Products (REF)**: unique pre-event product, available only for activations outside Europe. Provides pre-event spatial information based on images captured as close as possible to the date of the event.
++ **Situational Reporting (SR)**: is an online report that visually and informatively summarizes the event and activation. It starts within 4 hours of the activation with key exposure information and is updated regularly until the activation is closed, including data from other sources (media, social media, Copernicus EMS).
 
 .. _Download flooded area delineation map:
 
 Download flooded area delineation map
 -------------------------------------
 
-Open the `EMS website <https://emergency.copernicus.eu/>`_  (:numref:`3.1.2.1`) and, in the section of the website regarding **Rapid Mapping (1)**, click on **Mapping (2)**, you will be taken to the EMS mapping page.
+Open the `EMS website <https://emergency.copernicus.eu/>`_ and click in the **On-Demand Mapping** section. To locate the exercise event, select “flood” **(1)**, Country: Italy **(2)** and narrow the time range from January 2020 to November 2021 **(3)** (:numref:`3.1.2.1`).
 
 .. _3.1.2.1:
 
 .. figure:: /img/3/3.1.2.1.png
    :align: center
 
-   -- Rapid mapping in EMS interface
+   -- On-Demand mapping
 
-Under **RAPID MAPPING** (:numref:`3.1.2.2`) click on **List of activations (1)**. 
+Seven events appear in the map; zooming in brings us to a reduced area in which we can locate the event that occurred in Piedmont in October 2020 (:numref:`3.1.2.2`).
 
 .. _3.1.2.2:
 
 .. figure:: /img/3/3.1.2.2.png
    :align: center
 
-   -- Copernicus Emergency Management Service – Mapping
+   -- Flooding in the Piedmont region in October 2020.
 
-In order to look for a flood event in piedmont, fill in the searching parameters (:numref:`3.1.2.3`) in the following way:
-
-+ **Name (1)**: Piedmont
-+ **Event (2)**: Flood
-+ **Countries (3)**: Italy  
-
-Once done, click on **Apply Filters (4)**, a list of all activations corresponding to the criteria will appear below. Click on the event: “ `Flood in Piedmont region, Italy <https://emergency.copernicus.eu/mapping/list-of-components/EMSR468>`_   ” **(5)**. 
+Clicking on **"Activation details ”** opens a window showing the list of available products corresponding to 6 different zones. We select “Vercelli” **(1)** and download the available data by clicking on “Vector” **(2)** (:numref:`3.1.2.3`).
 
 .. _3.1.2.3:
 
 .. figure:: /img/3/3.1.2.3.png
    :align: center
 
-   -- Searching for flood event in piedmont
-
-A page in which you can download EMS data will be opened, scroll down until you find **Filter by AOI** (:numref:`3.1.2.4`) **(1)**; select “Vercelli” **(2)**. In the list of downloadable items the first one will correspond to the one we are interested in, in order to download it, click on **ZIP (3)**. While data are downloading you can note that it is also possible to filter data by type (**GRADING** , **DELINEATION** or **FIRST ESTIMATE**) **(4)** and check two links. The first of the two is the **Activation Extent Map: live** page **(5)** from which you can see the extent of the activation in real time. The second one is the **GeoRSS: feed (6)** where RSS stands for Really Simple Syndication. By clicking on this link, a chronological feed of all products regarding the selected activation will be shown. 
-
-.. note:: the vector package will be downloaded in “zip” format, unzip it.
-
-.. _3.1.2.4:
-
-.. figure:: /img/3/3.1.2.4.png
-   :align: center
-
-   -- Download EMS data for the flood event in Piedmont
+   -- Download EMS data regarding the flooding in Piedmont.
 
 Importing the EMS Data in QGIS
 ------------------------------
