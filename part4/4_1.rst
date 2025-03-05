@@ -3,6 +3,8 @@
 How to Download the data with Copernicus Browser
 ================================================
 
+.. _section_4.1.1:
+
 Why Sentinel-2
 --------------
 
@@ -24,7 +26,7 @@ Click on Login **(1)** then fill in the Email **(2)** and Password **(3)** field
 
    -- Log in to Copernicus Browser
 
-Once logged in; we are going to take advantage of Copernicus Browser flexibility to find the data we are interested in and to upload the area of interest (AOI). To do so, set the following parameters in the **SEARCH** tab (:numref:`4.1.2.2`) :
+Once logged in; we are going to take advantage of Copernicus Browser flexibility to find the data we are interested in and to upload the area of interest (AOI). To do so, set the following parameters in the **SEARCH** tab (:numref:`4.1.2.2`):
 check the L2A box **(1)**;
 set cloud coverage to 40% **(2)**;
 set the **TIME RANGE** to 28-09-2020 to 04-10-2020 (dd-mm-yyyy), in this case there is no need to modify the hours and minutes range **(3)**.
@@ -160,7 +162,7 @@ Download Sentinel-2 images
 
 Now that you have closed the time-lapse click on **(1)**, to download the image as shown in :numref:`4.1.6.1` . Choose the analytical panel **(2)** to set the image format to TIFF **(3)** (Tagged Image File Format). The .tiff format is a popular file format used to store raster data, it allows lossless compression (there is no loss in image quality while compressing the file) and storing images with different color depths.
 
-.. note::  more information about .tiff format can be found `here <https://web.archive.org/web/20210108172855/https://www.adobe.io/open/standards/TIFF.html>`_ . 
+.. note::  more information about .tiff format can be found at `this page <https://web.archive.org/web/20210108172855/https://www.adobe.io/open/standards/TIFF.html>`_ . 
 
 Set the image resolution to **HIGH (4)** and the coordinate system to WGS84 **(5)**. At this point you can choose the layers **(6)** and bands (for this lecture select all of them) **(7)** that you like to save, remember that by toggling **Clip extra bands (8)** only the first 3 bands will be included in the image. Once you are done, you can download your images through the **Download** button (9).
 

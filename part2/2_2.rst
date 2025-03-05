@@ -6,7 +6,7 @@ Display satellite images(s) in Copernicus Browser
 Display satellite images(s) with true colors
 --------------------------------------------
 
-By default `Copernicus Browser <https://qgis.org/en/site/forusers/download.html>`_ displays a **True color** image :numref:`2.2.1.1`; True color is a combination of Red, Green, and Blue, for Sentinel-2, they can be found in band 4, band 3, and band 2 ( :ref:`further information about Sentinel-2 < Link to Why Sentinel-2 “4.1.1”>`). Thus, Earth’s surface is shown as humans would see it naturally. All the layers come with a description. To expand the window and read it click on **(1)**.
+By default `Copernicus Browser <https://qgis.org/en/site/forusers/download.html>`_ displays a **True color** image :numref:`2.2.1.1`; True color is a combination of Red, Green, and Blue, for Sentinel-2, they can be found in band 4, band 3, and band 2 (:ref:`further information about Sentinel-2 <section_4.1.1>`). Thus, Earth’s surface is shown as humans would see it naturally. All the layers come with a description. To expand the window and read it click on **(1)**.
 
 .. _2.2.1.1:
 
