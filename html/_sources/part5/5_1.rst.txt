@@ -3,10 +3,7 @@
 The CLMS
 ========
 
-`The Copernicus Land Monitoring Service (CLMS) <https://land.copernicus.eu/en>`_  is part of the Copernicus programme and it aims to provide geographical information on land use and land cover with its changes, ground motion, vegetation state, water cycle and earth surface energy variables. All in a pan-European and global context. All products are free of charge and can be used for any purpose.
-Once you have opened the CLMS website you will be greeted by its homepage (:numref:`5.1.1`). From the top bar of the homepage you can go to other sections of the website devoted to: seek technical assistance **(1)**, view product updates **(2)**, check news and events **(3)** (these can be directly checked in the homepage) and take a look at work opportunities **(4)**. You can also register a new account or log in **(5)**: how to do so, will be shown in :numref:`5.1.1.2`. Lastly, it is possible to search directly for the information you are interested in by using the search bar **(6)**.
-It is also possible to reach the main pages of the website using the main menu **(7)**, those pages will be discussed further below.
-By clicking on the listed product types **(8)** you will be brought to the Data Viewer page already filtered by the products you have selected. Datasets are grouped into categories, including:
+`The Copernicus Land Monitoring Service (CLMS) <https://land.copernicus.eu/en>`_ is part of the Copernicus programme and it aims to provide geographical information on land use and land cover with its changes, ground motion, vegetation state, water cycle and earth surface energy variables. All in a pan-European and global context. All products are free of charge and can be used for any purpose. Once you have opened the CLMS website you will be greeted by its homepage (:numref:`5.1.1`). From the top bar of the homepage you can go to other sections of the website devoted to: seek technical assistance **(1)**, view production updates **(2)**, and check news and events **(3)** (these can be directly checked in the homepage). You can also register a new account or log in **(4)**: how to do so, will be shown in :numref:`5.1.1.2`. Lastly, it is possible to search directly for the information you are interested in by using the search bar **(5)**. It is also possible to reach the main pages of the website using the main menu **(6)**, those pages will be discussed further below. By clicking on the listed product types **(7)** you will be brought to the Data Viewer page already filtered by the products you have selected. Datasets are grouped into categories, including: 
 
 + land cover and land use mapping, consisting of land cover classifications and layers on vegetated land cover characteristics;
 + priority area monitoring, including land cover/land use information for specific areas of interest prone to environmental changes;
@@ -103,7 +100,7 @@ From the top of the **Use Cases** page (:numref:`5.1.10`) , we can open the seco
 
    -- CLMS website - Use cases pt.3
 
-The last page that we can reach from the main menu will group information about the CLMS (:numref:`5.1.11`) . This page can be reached by clicking on **About Us (1)**. Here there is information about what CLMS is and what it does. Ultimately there is the possibility to contact the helpdesk to seek answers to questions that do not find one on the website. 
+The last page that we can reach from the main menu will group information about the CLMS (:numref:`5.1.11`). This page can be reached by clicking on **About (1)**. Here there is information about what CLMS is and what it does. Ultimately there is the possibility to contact the helpdesk to seek answers to questions that do not find one on the website.
 
 .. _5.1.11:
 

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.1. Access to Copernicus Satellite images for free &mdash; COPERNICUS4Schools  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2.2. Display satellite images(s) in Copernicus Browser" href="2_2.html" />
+    <link rel="prev" title="2. GIS and Analysis Tools" href="part2.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            COPERNICUS4Schools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part1/part1.html">1. Introduction to GIS (Geographic Information System)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="part2.html">2. GIS and Analysis Tools</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.1. Access to Copernicus Satellite images for free</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#remote-sensing-and-earth-observation">2.1.1. Remote Sensing and Earth Observation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#satellites">2.1.1.1. Satellites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#image-acquisition">2.1.1.2. Image Acquisition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#image-characteristics">2.1.1.3. Image Characteristics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#image-analysis">2.1.1.4. Image Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#copernicus-browser">2.1.2. Copernicus Browser</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#registration-in-copernicus-browser">2.1.2.1. Registration in Copernicus Browser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logged-in-copernicus-browser-and-language-change">2.1.2.2. Logged in Copernicus Browser and language change</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-to-select-correct-products-with-copernicus-browser">2.1.2.3. How to select correct products with Copernicus Browser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-to-view-the-satellite-images-with-copernicus-browser">2.1.2.4. How to view the satellite images with Copernicus Browser</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="2_2.html">2.2. Display satellite images(s) in Copernicus Browser</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part3/part3.html">3. Retrieving Copernicus EMS Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part4/part4.html">4. Sentinel-2 Pre- and Post-Event Imagery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part5/part5.html">5. Retrieving Copernicus Land Monitoring Service (CLMS) data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part6/part6.html">6. Retrieving JRC POPULATION DATA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part7/part7.html">7. Computing land Cover affected by flooding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part8/part8.html">8. Population affected by flooding</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COPERNICUS4Schools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="part2.html"><span class="section-number">2. </span>GIS and Analysis Tools</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2.1. </span>Access to Copernicus Satellite images for free</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/part2/2_1.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="access-to-copernicus-satellite-images-for-free">
+<span id="id1"></span><h1><span class="section-number">2.1. </span>Access to Copernicus Satellite images for free<a class="headerlink" href="#access-to-copernicus-satellite-images-for-free" title="Link to this heading"></a></h1>
+<section id="remote-sensing-and-earth-observation">
+<h2><span class="section-number">2.1.1. </span>Remote Sensing and Earth Observation<a class="headerlink" href="#remote-sensing-and-earth-observation" title="Link to this heading"></a></h2>
+<p>Remote Sensing is the science that studies how to acquire information about an object without being in contact with it. Usually the object of remote sensing is the Earth itself, in this case we talk about Earth Observation.</p>
+<section id="satellites">
+<h3><span class="section-number">2.1.1.1. </span>Satellites<a class="headerlink" href="#satellites" title="Link to this heading"></a></h3>
+<p>In order to acquire our observations we use sensors mounted on satellites. Satellites are objects placed into orbit around a celestial body. There are different orbits varying in shape, size, and orientation depending on factors such as altitude, inclination, and eccentricity, we will report here some of them:</p>
+<ul class="simple">
+<li><p>Geostationary orbit (GEO): satellites placed in this kind of orbit are situated approximately at an altitude of 35,000 km and appear stationary relative to a fixed point on the Earth’s surface providing continuous coverage of the region around that point</p></li>
+<li><p>Low Earth orbit (LEO): satellites placed in this kind of orbit range from 160 km to 2000 km above the Earth’s surface, these low altitudes allow high resolution and rapid revisiting of the same region</p></li>
+<li><p>Medium Earth orbit (MEO): satellites placed in this kind of orbit are placed in a distance ranging between the one of the low Earth orbit and the one of the geostationary orbit. Satellites here offers a trade off between revisit time and coverage</p></li>
+<li><p>Polar orbit: satellites placed in this kind of orbit pass over the Earth’s poles</p></li>
+<li><p>Sun-synchronous orbit (SSO): satellites placed in this kind of orbit precess at a rate that matches the Earth’s orbital motion around the Sun, meaning that with every orbit, the satellite passes at the same solar time over any given point on the Earth’s surface. Sun-synchronous orbit represents a specific case of polar orbits.</p></li>
+</ul>
+<p>Through satellites we can achieve a global coverage and a consistent temporal sampling, often requiring little to no cost for the final users as it happens for the European Copernicus Project.</p>
+</section>
+<section id="image-acquisition">
+<h3><span class="section-number">2.1.1.2. </span>Image Acquisition<a class="headerlink" href="#image-acquisition" title="Link to this heading"></a></h3>
+<p>What we measure is the electromagnetic energy that the Earth emits or reflects. Electromagnetic energy is a combination of an electrical and a magnetic field, the former varying in magnitude perpendicularly to the travel direction, while the latter being oriented in such a way that it completes the right-handed triad.
+What characterizes the electromagnetic energy is its frequency (f) and wavelength (<span class="math notranslate nohighlight">\(λ\)</span>), the two are connected by the relation:</p>
+<div class="math notranslate nohighlight">
+\[v = f \times λ\]</div>
+<p>where v is the speed of the wave.
+In the vacuum the speed of both electrical and magnetic fields is equal to the speed of light (c).
+Given these notions, the idea is that we can measure the ratio between reflected and emitted energy as a function of wavelength and retrieve the unique pattern corresponding to each material that takes the name of spectral signature. After that, by comparing an observed signature to a known one we will be able to recognize which material it corresponds to.</p>
+</section>
+<section id="image-characteristics">
+<h3><span class="section-number">2.1.1.3. </span>Image Characteristics<a class="headerlink" href="#image-characteristics" title="Link to this heading"></a></h3>
+<p><strong>Processing levels</strong>
+Products can be classified based on the level of processing they undergo, in particular we talk about 5 levels:</p>
+<ul class="simple">
+<li><p>Level 0: also referred as raw data, these data are only corrected from the transmission errors and are usually not suitable for analysis without further processing.</p></li>
+<li><p>Level 1: includes sensor distortions corrections, geometric corrections, and radiometric corrections. This is the kind of product we are going to work with in these lectures.</p></li>
+<li><p>Level 2: In this stage, algorithms to enhance some characteristics of the data are applied. Examples of resulting products can be surface elevation maps or vegetation indices.</p></li>
+<li><p>Level 3: Products in this level, also referred as Gridded Data Products,  are composed of thematic products such as average temperature maps or urbanization growth rate maps. These products are derived from level 2 products which are aggregated, averaged or interpolated.</p></li>
+<li><p>Level 4: In this last stage, data are integrated with other products and modeled to give prediction/forecasting. Some examples can be seen in the use of urbanization growth forecasting used to predict the energy production that will be needed to sustain a certain area.</p></li>
+</ul>
+<p><strong>Spatial Resolution</strong>
+The spatial resolution refers to the size of the smallest feature that can be represented and specifies the pixel size of satellite images at the Earth’s surface.
+Depending on their image pixel size, remote sensing cameras are classified as:</p>
+<ul class="simple">
+<li><p>Very high spatial resolution: &lt; 1 m</p></li>
+<li><p>High spatial resolution: 1 - 5 m</p></li>
+<li><p>Medium spatial resolution: 5 - 100 m</p></li>
+<li><p>Low spatial resolution: &gt; 100 m</p></li>
+</ul>
+<p>In this lecture we will use multispectral medium resolution imagery for land services provided by Sentinel-2 satellites (twin satellites Sentinel-2A and Sentinel-2B).
+Those images will allow us to distinguish houses but certainly not people.</p>
+<p><strong>Temporal Resolution</strong>
+Temporal resolution is defined as the minimum span of time between two consecutive observations on the same site. It is very important for monitoring.
+For a satellite it is the length of time it takes it to complete an orbit cycle.
+In order to monitor phenomena like a volcano eruption a temporal resolution of 1 day may be enough while in traffic monitoring an hourly or even less temporal resolution may be needed.
+Sentinel-2 constellation will provide, with one satellite, a temporal resolution of 10 days at the equator.</p>
+<p><strong>Spectral Resolution</strong>
+Spectral resolution is defined as the number of spectral bands (<a class="reference internal" href="#id2"><span class="std std-numref">Fig. 2.1.1.1</span></a>) in which we divide our spectral range. With Sentinel-2 satellites we can capture imagery in 13 spectral bands depending on the spatial resolution.</p>
+<figure class="align-center" id="id16">
+<span id="id2"></span><img alt="../_images/2.1.1.1.png" src="../_images/2.1.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.1.1 </span><span class="caption-text">– Example of multiband image</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="image-analysis">
+<span id="id3"></span><h3><span class="section-number">2.1.1.4. </span>Image Analysis<a class="headerlink" href="#image-analysis" title="Link to this heading"></a></h3>
+<p>Image indices are images derived from multiband images. The resulting product highlights a specific phenomenon in the area of interest and allows a better comprehension of the phenomena.
+Some of the indices that can be seen in Copernicus Browser are shown in <a class="reference internal" href="#id4"><span class="std std-numref">Fig. 2.1.1.2</span></a>:</p>
+<ul class="simple">
+<li><p><strong>NDVI</strong>: Normalized Difference Vegetation Index <strong>(1)</strong> it is a widely known index used to quantify green vegetation. It normalizes green leaf scattering in Near Infra-red (NIR) wavelengths with chlorophyll absorption in red wavelengths. It can be computed as: NDVI = (NIR - RED) / (NIR + RED)</p></li>
+<li><p><strong>NDMI</strong>: Normalized Difference Moisture Index <strong>(2)</strong> can be computed as: NDMI = (NIR-SWIR) / (NIR+SWIR) where SWIR stands for shortwave infrared and it is used to detect changes in the water content of the leaves. The amount of water inside a leaf is in fact responsible for the reflectance in the SWIR interval.</p></li>
+<li><p><strong>NDWI</strong>: Normalized Difference Water Index <strong>(3)</strong> can be computed as: NDWI = (GREEN - NIR) / (GREEN + NIR). Water bodies have in fact shown a sensible light absorption towards the part of the electromagnetic spectrum between visible and infrared. This index may overestimate water bodies since urbanized areas can also reflect in those bands.</p></li>
+<li><p><strong>NDSI</strong>: Normalised Difference Snow Index <strong>(4)</strong> can be computed as: NDSI = (GREEN - SWIR) / (GREEN + SWIR) where SWIR stands for shortwave infrared. This index can also be used as a tool to distinguish between snow cover and clouds since both absorb light in the SWIR but generally only clouds reflect the visible light.</p></li>
+</ul>
+<figure class="align-center" id="id17">
+<span id="id4"></span><img alt="../_images/2.1.1.2.png" src="../_images/2.1.1.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.1.2 </span><span class="caption-text">– Copernicus Browser Indices</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="copernicus-browser">
+<h2><span class="section-number">2.1.2. </span>Copernicus Browser<a class="headerlink" href="#copernicus-browser" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://browser.dataspace.copernicus.eu/" rel="noopener noreferrer" target="_blank">Copernicus Browser</a> combines a complete archive of Sentinel-1, Sentinel-2, Sentinel-3, Sentinel-5P, ESA’s archive of Landsat 5, 7 and 8, global coverage of Landsat 8, Envisat Meris, MODIS, Proba-V and GIBS products in one place and makes it possible to browse and compare full resolution images from those sources.
+Copernicus Browser interface (<a class="reference internal" href="#id6"><span class="std std-numref">Fig. 2.1.2.1</span></a>) is composed of three main sections, on the left there is the sidebar (1), in the center there is the map (2) and on the right of the screen there is the tool bar. The sidebar functionality will be explained further down the lecture. In the map section it is possible to visualize selected products and to move around and zoom in and out checking the results of a selection. Lastly, in the toolbar it is possible to zoom to a specific location (3) and to make use of many tools. For clarity purposes the tools icons have also been reported on top of  <a class="reference internal" href="#id6"><span class="std std-numref">Fig. 2.1.2.1</span></a> :</p>
+<ul class="simple">
+<li><p><strong>Layers (4)</strong></p></li>
+<li><p><strong>Create an area of interest (5)</strong></p></li>
+<li><p><strong>Draw a line (6)</strong></p></li>
+<li><p><strong>Make point of interest (7)</strong></p></li>
+<li><p><strong>Measure (8)</strong></p></li>
+<li><p><strong>Download image (9)</strong></p></li>
+<li><p><strong>Create timelapse animation (10)</strong></p></li>
+<li><p><strong>Visualize terrain in 3D (11)</strong></p></li>
+<li><p><strong>Histogram (12)</strong></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In case you want to read the documentation it can be reached through the following link <a class="reference external" href="https://documentation.dataspace.copernicus.eu/Applications/Browser.html" rel="noopener noreferrer" target="_blank">Copernicus Browser Documentation</a> .</p>
+</div>
+<figure class="align-center" id="id18">
+<span id="id6"></span><img alt="../_images/2.1.2.1.png" src="../_images/2.1.2.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.1 </span><span class="caption-text">– Copernicus Browser Interface</span><a class="headerlink" href="#id18" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>An example of use of the <strong>Layers</strong> tool is shown in <a class="reference internal" href="#id7"><span class="std std-numref">Fig. 2.1.2.2</span></a>. By clicking on the corresponding icon <strong>(1)</strong> it is possible to choose different base maps and layers showing different aspects such as roads, borders of countries and regions, water bodies etc. In the left image only the Sentinel-2 Mosaic layer has been activated <strong>(2)</strong> while in the right one the OSM Background, water bodies, roads and labels layer have been activated <strong>(3)</strong> but both images show the same area.</p>
+<figure class="align-center" id="id19">
+<span id="id7"></span><img alt="../_images/2.1.2.2.png" src="../_images/2.1.2.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.2 </span><span class="caption-text">– Layers Tool</span><a class="headerlink" href="#id19" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>An example of use of the <strong>Create an area of interest</strong> tool is shown in <a class="reference internal" href="#id8"><span class="std std-numref">Fig. 2.1.2.3</span></a>. By clicking on the corresponding icon <strong>(1)</strong> it is possible to choose different ways of drawing the area, in the top part of the image a rectangular area is shown. In order to draw it, click on the squared icon <strong>(2)</strong> then click on a point in the map, this action will fix the first vertex of the rectangle, by clicking on another point the rectangle will be drawn <strong>(3)</strong>. You will be able to visualize the contained area and copy it <strong>(4)</strong>. Clicking on the x icon will delete the area selection <strong>(5)</strong> while clicking on the crosshair icon will center the map on the selected area <strong>(6)</strong>. In the bottom part of the image a second way of drawing the area is shown, by clicking on the pencil icon <strong>(7)</strong> you can draw a polygonal area <strong>(8)</strong>, all other functionality remains the same.</p>
+<figure class="align-center" id="id20">
+<span id="id8"></span><img alt="../_images/2.1.2.3.png" src="../_images/2.1.2.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.3 </span><span class="caption-text">– Draw Area pt.1</span><a class="headerlink" href="#id20" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>In order to utilize the last two tools shown in <a class="reference internal" href="#id9"><span class="std std-numref">Fig. 2.1.2.4</span></a>, it is needed to select a product (in later chapters it will be shown how to do so). By clicking on <strong>Spectral explorer</strong> <strong>(1)</strong> a new menu will open up  from which it is possible to check the spectral signature of the selected area (averaged over all the pixels within the area itself) <strong>(2)</strong>. It is also possible to add to the graph other known signatures that can be activated by clicking on the legend entries at the   bottom of the graph <strong>(3)</strong> in order to make comparisons. By clicking on <strong>Values (4)</strong>, the band’s values will be visualized in a table format <strong>(5)</strong>.
+The last tool is not available for true color maps and some indexes, in this case we use it over the NDWI index which is supported (how to select a specific index will also be shown in later chapters). By Clicking on the <strong>Statistical info/feature info Service chart</strong> tool <strong>(6)</strong>,  a new menu will open up  from which it is possible to check the index change over time in the selected area <strong>(7)</strong>.
+Once an area has been selected it is possible to click on the <strong>Histogram</strong> tool <strong>(8)</strong> to have an insight of the data distribution <strong>(9)</strong>.</p>
+<figure class="align-center" id="id21">
+<span id="id9"></span><img alt="../_images/2.1.2.4.png" src="../_images/2.1.2.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.4 </span><span class="caption-text">– Draw Area pt.2</span><a class="headerlink" href="#id21" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>By clicking on the <strong>Draw a line</strong> tool <strong>(1)</strong> (<a class="reference internal" href="#id10"><span class="std std-numref">Fig. 2.1.2.5</span></a>) you can click on the maps and draw lines, of those lines you can check the length but most importantly you can click on <strong>Elevation profile (2)</strong> to open a graph representing the elevation with respect to the distance <strong>(3)</strong>.
+Another tool is the <strong>Mark point of interest</strong>, by clicking on it <strong>(4)</strong> you can then click on the map and place a marker, you can check the index change over time in the selected point by clicking on the <strong>Statistical info/feature info Service chart</strong> in the same way as with the <strong>Create an area of interest</strong> tool.
+With the <strong>Measure</strong> tool <strong>(5)</strong> it is instead possible of measuring length and areas over the maps.
+.. note:: Download image, Create timelapse animation and Visualize terrain in 3D  tools will be shown respectively in lecture/chapter xxx</p>
+<figure class="align-center" id="id22">
+<span id="id10"></span><img alt="../_images/2.1.2.5.png" src="../_images/2.1.2.5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.5 </span><span class="caption-text">– Draw a line, Mark point of interest and Measure tools</span><a class="headerlink" href="#id22" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="registration-in-copernicus-browser">
+<span id="registration"></span><h3><span class="section-number">2.1.2.1. </span>Registration in Copernicus Browser<a class="headerlink" href="#registration-in-copernicus-browser" title="Link to this heading"></a></h3>
+<p>From here click on <strong>Login (1)</strong> (<a class="reference internal" href="#id11"><span class="std std-numref">Fig. 2.1.2.6</span></a>), as you can see another window will pop up with the option to Log-in (if you already have an account) or register.
+In order to create an account click on <strong>Register (2)</strong>. Now fill the mandatory fields as shown, keep in mind that your password must contain at least 1 special character, 1 upper case character, 1 lower case character, 1 numerical digit and have a minimum length of 12.
+Once you have finished click on <strong>Register (3)</strong>. At this point you will receive an email (on the email you have set in the registration form) requiring you to verify your address. In order to do so follow the indicated steps.
+If you have not received any email try to look into your Spam or Junk folder.</p>
+<figure class="align-center" id="id23">
+<span id="id11"></span><img alt="../_images/2.1.2.6.png" src="../_images/2.1.2.6.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.6 </span><span class="caption-text">– Registration in Copernicus Browser</span><a class="headerlink" href="#id23" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="logged-in-copernicus-browser-and-language-change">
+<h3><span class="section-number">2.1.2.2. </span>Logged in Copernicus Browser and language change<a class="headerlink" href="#logged-in-copernicus-browser-and-language-change" title="Link to this heading"></a></h3>
+<p>Once you are logged in (<a class="reference internal" href="#id12"><span class="std std-numref">Fig. 2.1.2.7</span></a>), your name will appear on the top right corner of the sidebar <strong>(1)</strong>; on its left side of it <strong>(2)</strong> you can set your preferred language.</p>
+<figure class="align-center" id="id24">
+<span id="id12"></span><img alt="../_images/2.1.2.7.png" src="../_images/2.1.2.7.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.7 </span><span class="caption-text">– Logged in Copernicus Browser and language change</span><a class="headerlink" href="#id24" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="how-to-select-correct-products-with-copernicus-browser">
+<h3><span class="section-number">2.1.2.3. </span>How to select correct products with Copernicus Browser<a class="headerlink" href="#how-to-select-correct-products-with-copernicus-browser" title="Link to this heading"></a></h3>
+<p>Now we will configure the searching parameters (<a class="reference internal" href="#id13"><span class="std std-numref">Fig. 2.1.2.8</span></a>):</p>
+<ul class="simple">
+<li><p>Search for the <strong>Area of interest (1)</strong>, our study area is “Piedmont, Vercelli, Italy”</p></li>
+<li><p>Click on <strong>SEARCH (2)</strong></p></li>
+<li><p>We are looking for Sentinel-2 images. Therefore, Check <strong>Sentinel-2 (3)</strong> as a data source</p></li>
+<li><p>Now check <strong>L2A (4)</strong>, limiting the search only toward Sentinel-2 atmospherically corrected images</p></li>
+<li><p>Set the <strong>Maximum cloud coverage (5)</strong> to 35%</p></li>
+<li><p>Set the <strong>TIME RANGE</strong></p></li>
+</ul>
+<ul class="simple">
+<li><p>regarding the date component (dd-mm-yyyy) set both <strong>From</strong> and <strong>Until</strong> to “03-10-2020” <strong>(6)</strong></p></li>
+<li><p>for the hour and minutes component set it <strong>From</strong> 00 hh and 00 mm <strong>Until</strong> to 11 hh and 00 mm <strong>(7)</strong></p></li>
+</ul>
+<ul class="simple">
+<li><p>Click the <strong>Search (8)</strong> button</p></li>
+</ul>
+<figure class="align-center" id="id25">
+<span id="id13"></span><img alt="../_images/2.1.2.8.png" src="../_images/2.1.2.8.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.8 </span><span class="caption-text">– Select the correct products in Copernicus Browser</span><a class="headerlink" href="#id25" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="how-to-view-the-satellite-images-with-copernicus-browser">
+<h3><span class="section-number">2.1.2.4. </span>How to view the satellite images with Copernicus Browser<a class="headerlink" href="#how-to-view-the-satellite-images-with-copernicus-browser" title="Link to this heading"></a></h3>
+<p><strong>Select the desired image footprint</strong></p>
+<p>The area on the Earth that was visible to the satellite at the time of taking the image is displayed as a polygon.
+Here you can inspect the full metadata of the image tiles by clicking on the product info button <strong>(1)</strong>
+Now, you can visualize your chosen product either by selecting the desired image tile <strong>(2)</strong> (image taken over Vercelli) in the main window or by clicking <strong>Visualize (3)</strong> on the sidebar. (<a class="reference internal" href="#id14"><span class="std std-numref">Fig. 2.1.2.9</span></a>)
+Details of the image that we are looking for are reported here:</p>
+<ul class="simple">
+<li><p>Product type: Sentinel-2 L2A</p></li>
+<li><p>Date: 03-10-2020</p></li>
+<li><p>Time: 10:17:59 UTC (Hour: min: sec)</p></li>
+<li><p>Cloud cover percentage: 33.8%</p></li>
+<li><p>Tile ID: 32TMR</p></li>
+</ul>
+<figure class="align-center" id="id26">
+<span id="id14"></span><img alt="../_images/2.1.2.9.png" src="../_images/2.1.2.9.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.9 </span><span class="caption-text">– Selection of the desired Satellite image from Copernicus Browser map panel</span><a class="headerlink" href="#id26" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The product summary is visible in <a class="reference internal" href="#id15"><span class="std std-numref">Fig. 2.1.2.10</span></a>.</p>
+<figure class="align-center" id="id27">
+<span id="id15"></span><img alt="../_images/2.1.2.10.png" src="../_images/2.1.2.10.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.1.2.10 </span><span class="caption-text">– Desired image details</span><a class="headerlink" href="#id27" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="part2.html" class="btn btn-neutral float-left" title="2. GIS and Analysis Tools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="2_2.html" class="btn btn-neutral float-right" title="2.2. Display satellite images(s) in Copernicus Browser" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, GEOLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

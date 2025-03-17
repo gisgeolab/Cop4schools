@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.1. What are Geographic Information Systems? &mdash; COPERNICUS4Schools  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="1.2. Introduction to QGIS" href="1_2.html" />
+    <link rel="prev" title="1. Introduction to GIS (Geographic Information System)" href="part1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            COPERNICUS4Schools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="part1.html">1. Introduction to GIS (Geographic Information System)</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.1. What are Geographic Information Systems?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#coordinate-reference-system">1.1.1. Coordinate Reference System</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#projection">1.1.1.1. Projection</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#gis-data">1.1.2. GIS Data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#raster-data">1.1.2.1. Raster Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vector-data">1.1.2.2. Vector Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="1_2.html">1.2. Introduction to QGIS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part2/part2.html">2. GIS and Analysis Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part3/part3.html">3. Retrieving Copernicus EMS Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part4/part4.html">4. Sentinel-2 Pre- and Post-Event Imagery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part5/part5.html">5. Retrieving Copernicus Land Monitoring Service (CLMS) data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part6/part6.html">6. Retrieving JRC POPULATION DATA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part7/part7.html">7. Computing land Cover affected by flooding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part8/part8.html">8. Population affected by flooding</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COPERNICUS4Schools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="part1.html"><span class="section-number">1. </span>Introduction to GIS (Geographic Information System)</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">1.1. </span>What are Geographic Information Systems?</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/part1/1_1.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="what-are-geographic-information-systems">
+<span id="id1"></span><h1><span class="section-number">1.1. </span>What are Geographic Information Systems?<a class="headerlink" href="#what-are-geographic-information-systems" title="Link to this heading"></a></h1>
+<p>A geographic information system (GIS) is a system that can be used to analyze, manipulate, integrate, and map different data types. Through it, it is also possible to manage georeferenced data. GIS is used for a wide range of applications that span from visualizing bird biodiversity maps using data gathered through citizen science to monitoring a flooding event.
+<em>“A GIS is an integrated system of computer hardware, software, and trained personnel linking topographic, demographic, utility, facility, image and other resource data that is geographically referenced”</em>  US National Aeronautics and Space Administration (NASA)
+GIS are composed of several elements (<a class="reference internal" href="#id2"><span class="std std-numref">Fig. 1.1.1</span></a>):</p>
+<ul class="simple">
+<li><p>Data:  Digital  or  analog  information  linking attributes with geographic locations</p></li>
+<li><p>Methods:  Mathematical  models  and  analytic techniques to manipulate spatial data</p></li>
+<li><p>Software: Written instructions (source code) that can be read by computers to implement methods</p></li>
+<li><p>Hardware:  Equipment  to  support  the  activities needed  for  spatial  data  collection,  storage, processing, analysis, and display</p></li>
+<li><p>People: Trained GIS professionals and end-users</p></li>
+<li><p>Network: Provides connections among all the GIS components</p></li>
+</ul>
+<figure class="align-center" id="id9">
+<span id="id2"></span><img alt="../_images/1.1.1.png" src="../_images/1.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1.1 </span><span class="caption-text">– GIS elements</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The suggested first step to novice users for learning  GIS  is  through  desktop  GIS applications (<a class="reference internal" href="#id3"><span class="std std-numref">Fig. 1.1.2</span></a>) . Desktop  GIS  are  software  applications, running  on  workstations  and  laptops, allowing users to access information using spatial  logic  and  methods,  to  modify  or create  from  scratch  spatial  data,  and  to visualise the results as a map. They also Provide graphical user interfaces and facilitate cooperation among users through  the  adoption  of  standard formats (exchange spatial data files but also complete mapping projects and analysis procedures). They also offer support  for network  connection enabling  access  to  online  GIS resources.
+There exist many models of software development and distribution such as freeware, shareware, FOSS etc. and, being users, it is fundamental to know the difference between them. Here we will see two of the most common:</p>
+<ul class="simple">
+<li><p>A proprietary GIS software is copyrighted and has limits against distribution and modification that are imposed by its owner. Generally, the use of proprietary GIS software is allowed to end-users with payment license</p></li>
+<li><p>A FOSS (free and open-source software) GIS is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software to anyone and for any purpose. These rights are guaranteed to any users free of charge</p></li>
+</ul>
+<figure class="align-center" id="id10">
+<span id="id3"></span><img alt="../_images/1.1.2.png" src="../_images/1.1.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1.2 </span><span class="caption-text">– Proprietary and free and open-source software</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="coordinate-reference-system">
+<span id="crf"></span><h2><span class="section-number">1.1.1. </span>Coordinate Reference System<a class="headerlink" href="#coordinate-reference-system" title="Link to this heading"></a></h2>
+<p>Geographic location is the element that distinguishes spatial data from all other types of information, so methods for specifying locations on the Earth’s surface are essential to GIS.
+Many techniques have been developed over the centuries to define locations,  but  only  thanks  to  GIS  it  has  become  possible  to automatically switch from one to another. To understand GIS and spatial data we must have in mind what is a coordinate reference system (CRS) and how they are established for the Earth. In order to define what is a coordinate reference system (CRS) we first need to talk about Coordinates and Datum.</p>
+<p>Coordinates are a sequence of values representing a location and form the basis of a coordinate system which is a sequence of coordinate axes where the unit of measurement is being specified.
+A datum is a mathematical model specifying the relationship through a coordinate system and the Earth, it is a modeled version of the Earth’s surface. The best description of Earth’s shape is provided by the geoid which results from complex physical models and describes the surface of equal gravity formed by the oceans, and its extension under the continents. For traditional GIS application, the geoid can be approximated using a sphere or, better, an ellipsoid of rotation. The ellipsoid known as WGS84 (the World Geodetic System of 1984) is currently the most widely accepted global geodetic datum and it is the one used, for example, by the Global Positioning System (GPS)
+When a coordinate system is complemented with a datum, we get a coordinate reference system (CRS). Each point in the geographic coordinate system has two coordinate values: latitude (φ) and longitude (𝜆) (<a class="reference internal" href="#id4"><span class="std std-numref">Fig. 1.1.1.1</span></a>)  :
+The Latitude is the  angle  formed by  the  intersection of  a line perpendicular to the Earth’s reference surface at the point, and the Equator. Lines of constant  latitude are also called “parallels”
+The Longitude is the angle between the plane crossing the North and South poles and a reference plane. Lines of constant longitude are termed “meridians” and the reference plane is identified by the prime meridian (recognized with the meridian passing through Greenwich, UK)</p>
+<figure class="align-center" id="id11">
+<span id="id4"></span><img alt="../_images/1.1.1.1.png" src="../_images/1.1.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1.1.1 </span><span class="caption-text">– Schematic of geographic coordinates system. The geographic coordinates of point p are defined by the angles φ (latitude) and λ (longitude)</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="projection">
+<h3><span class="section-number">1.1.1.1. </span>Projection<a class="headerlink" href="#projection" title="Link to this heading"></a></h3>
+<p>We define a projection as a method used to translate data from a three-dimensional surface of the Earth to a 2D representation. This process brings with it some distortions as there is no way of maintaining the scale of areas, distances, angles and directions at the same time.
+There exist many projections (<a class="reference internal" href="#id5"><span class="std std-numref">Fig. 1.1.1.2</span></a>) but, usually, when we look at world maps, we come in contact with maps using the Mercator projections. This kind of projection is especially used for navigation charts since straight lines drawn on it are lines of constant bearing. Mercator projection is also a conformal projection which means that angles and shapes are preserved at the cost of losing the scale of the area.
+Check out <a class="reference external" href="http://thetruesize.com" rel="noopener noreferrer" target="_blank">http://thetruesize.com</a> !</p>
+<figure class="align-center" id="id12">
+<span id="id5"></span><img alt="../_images/1.1.1.2.png" src="../_images/1.1.1.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1.1.2 </span><span class="caption-text">– Distortions of Greenland area from different sample map projections. Source: <a class="reference external" href="https://www.axismaps.com" rel="noopener noreferrer" target="_blank">https://www.axismaps.com</a></span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Digital catalogues</strong>
+Many CRS and projections have been developed and GIS allows converting spatial dataset between any CRS and projections. Digital catalogues containing encoded parameters (such as units, datums and projection formulas) of the different CRS is of primary importance to safely convert data from one CRS to another in an automatic way using GIS software
+The most popular catalogue is the European Petroleum Survey Group (EPSG) Geodetic Parameter Dataset which is a database of CRS information maintained by the International Association of Oil and Gas Producers Every CRS has a unique integer identifier (For example, the EPSG code of WGS84 is 4326).  For more information you can visit the <a class="reference external" href="https://epsg.io/" rel="noopener noreferrer" target="_blank">EPSG</a> .</p>
+</section>
+</section>
+<section id="gis-data">
+<h2><span class="section-number">1.1.2. </span>GIS Data<a class="headerlink" href="#gis-data" title="Link to this heading"></a></h2>
+<p>GIS data can be collected in different ways such as map digitization, direct survey, aerial survey and satellite measurements, each method with its pros and cons. Models are then used for  encoding  geographic  information  in  a  computer environment. GIS data models are a set of constructs and abstractions for describing and representing geographic entities in a digital system, they reshape geographic entities into discrete objects (vector models) or continuous surfaces (raster models) and fit both numerical and/or textual attributes with coordinates into computer files. The structure of these models is independent of specific data items and, in most cases, of the GIS application that is used to manipulate them. Also, GIS data models are often interchangeable so that the same geographic entity or phenomenon may be represented by different models, we will see interchangeability examples in future chapters.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The right data model to use strictly depends on the specific application  (no  single  data  model  is  the  best  for  all circumstances)</p>
+</div>
+<p>The two main types of spatial data used in GIS are represented by Raster and Vector data.</p>
+<section id="raster-data">
+<span id="id6"></span><h3><span class="section-number">1.1.2.1. </span>Raster Data<a class="headerlink" href="#raster-data" title="Link to this heading"></a></h3>
+<p>Through Raster data we represent the world as a regular grid or matrix of pixels (<a class="reference internal" href="#id7"><span class="std std-numref">Fig. 1.1.2.1</span></a>). Each cell location is defined by the type of raster coordinate system, the coordinate of the raster origin, which is usually placed in the upper or lower left corner and the cell size. The resolution of a raster dictates the level of detail it can capture. With this representation we can depict both discrete phenomena like land cover or administrative boundaries and continuous ones, like elevation, temperature, land cover class, soil type etc.
+Operations on raster data are (generally) computationally fast due to the regular matrix format that can be easily handled by GIS software, that is why raster data are particularly suitable for mapping large portions of the Earth surface.</p>
+<figure class="align-center" id="id13">
+<span id="id7"></span><img alt="../_images/1.1.2.1.png" src="../_images/1.1.2.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1.2.1 </span><span class="caption-text">– Raster Data</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="vector-data">
+<h3><span class="section-number">1.1.2.2. </span>Vector Data<a class="headerlink" href="#vector-data" title="Link to this heading"></a></h3>
+<p>With a vector representation, real world features are represented using three geometric features, points, lines and polygons (<a class="reference internal" href="#id8"><span class="std std-numref">Fig. 1.1.2.2</span></a>). Points define the foundation of this representation and their position is given by a set of coordinates while lines and Polygons consist of interconnected points. These three features can represent different real world features depending on the scale of the map, for example a road can be represented with a line in a small scale map or with a polygon in a large scale one.
+Usually vector data are provided with an attribute table where each attribute of a feature, such as text, dates and times, is stored in a different column. Vector data provide a sharp and scalable representation of geographic entities with almost no loss of portraying accuracy because entities boundaries are outlined directly by their coordinate values GIS provides many drawing functionalities to manually edit and styling vector data on maps. The higher the number of vertices and attributes the better is the level of detail provided by the vector data while the data file dimension increases. Mathematical operations on vector data are generally computationally slower than raster data due to the sparse or irregular object format to be handled by GIS software that is why vector data are particularly suitable for high-detail cartographic applications focusing on a finite number of discrete objects or involving confined geographic areas.</p>
+<figure class="align-center" id="id14">
+<span id="id8"></span><img alt="../_images/1.1.2.2.png" src="../_images/1.1.2.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.1.2.2 </span><span class="caption-text">– Vector Data</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="part1.html" class="btn btn-neutral float-left" title="1. Introduction to GIS (Geographic Information System)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="1_2.html" class="btn btn-neutral float-right" title="1.2. Introduction to QGIS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, GEOLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

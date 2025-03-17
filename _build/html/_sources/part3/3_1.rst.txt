@@ -1,0 +1,385 @@
+.. _3.1:
+
+Copernicus EMS
+==============
+
+`Copernicus Emergency Management Service <https://emergency.copernicus.eu/>`_ (:numref:`3.1.1`) is a segment of the Copernicus program dedicated to providing detailed and accurate geo-spatial information as quickly as possible in order to help in emergency situations by providing early warnings and supporting emergency monitoring. Data are collected from satellite remote sensing and combined with open source data and first-tier sources.
+
+.. _3.1.1:
+
+.. figure:: /img/3/3.1.1.png
+   :align: center
+
+   -- Copernicus Emergency Management Service
+
+The service is divided into five sections (:numref:`3.1.2`): On Demand Mapping **(1)**, Wildfires **(2)**, Floods **(3)**, Droughts **(4)**, Exposure Mapping **(5)**.
+
+.. _3.1.2:
+
+.. figure:: /img/3/3.1.2.png
+   :align: center
+
+   -- The subsections of the Copernicus EMS service.
+
+The On-Demand Mapping **(1)** section provides access to data on emergencies activated over a specific area anywhere in the world. Users can be notified of the activation request and can download the resulting products like all other Copernicus EMS products (:numref:`3.1.3`). This action will be discussed in detail in the next section.
+
+.. _3.1.3:
+
+.. figure:: /img/3/3.1.3.png
+   :align: center
+
+   -- Copernicus On-Demand Mapping
+
+The sections “Wildfires” **(2)**, “Floods” **(3)** and “Droughts” **(4)** report to specific services for each emergency, offering geospatial information based on observations and forecasts.
+The “Wildfires” section links to EFFIS - European Forest Fire Information System (:numref:`3.1.4`) the European system that provides up-to-date and reliable information on forest fires in Europe, supporting forest protection services and EU institutions, supported by a network of experts from 43 countries.
+
+.. _3.1.4:
+
+.. figure:: /img/3/3.1.4.png
+   :align: center
+
+   -- Copernicus EMS - EFFIS
+
+The “Floods” section **(3)** leads back to the European Flood Awareness System (EFAS) page (:numref:`3.1.5`) which supports preventive measures before major flood events occur, particularly in large transnational river basins and throughout Europe in general, and to the Global Flood Awareness System (GloFAS) page which covers major flood events that are predicted and ongoing on a global scale (:numref:`3.1.6`).
+
+.. _3.1.5:
+
+.. figure:: /img/3/3.1.5.png
+   :align: center
+
+   -- Copernicus EFAS
+
+.. _3.1.6:
+
+.. figure:: /img/3/3.1.6.png
+   :align: center
+
+   -- Copernicus GloFAS
+
+
+A similar structure is also found in the section on drought phenomena **(4)**. In this case the associated services are EDO (European Drought Observatory) and GDO (Global Drought Observatory). Real-time situation, forecasts, and data access are provided through interactive maps that are a particularly effective interface in emergency situations (:numref:`3.1.7`).
+
+.. _3.1.7:
+
+.. figure:: /img/3/3.1.7.png
+   :align: center
+
+   -- Interactive maps for drought at the European (EDO) and global (GDO) levels.
+
+The Copernicus EMS Exposure Mapping **(5)** section is a system that provides population and human settlement data. Among the various functions offered (:numref:`3.1.8`), data can be downloaded through the Global Human Settlement Layer (GHSL) for different epochs, resolutions and coordinate systems (:numref:`3.1.9`).
+
+
+.. _3.1.8:
+
+.. figure:: /img/3/3.1.8.png
+   :align: center
+
+   -- Functions offered by Copernicus EMS Exposure Mapping.
+
+
+.. _3.1.9:
+
+.. figure:: /img/3/3.1.9.png
+   :align: center
+
+   -- Global Human Settlement Layer (GHSL).
+
+Copernicus EMS On-Demand Mapping 
+--------------------------------
+
+As already stated at the beginning of :ref:`chapter 3.1 <3.1>` , Copernicus On-demand Mapping is one of the main services of the Copernicus EMS and consists of an on-demand service that provides geospatial information to support the management of activities during and following an emergency.
+Satellite imagery and other geospatial data are used to provide a free mapping service for natural hazards, man-made emergencies, and humanitarian crises worldwide. Of course, only authorized users can request an emergency activation.
+
+In the interactive map (:numref:`3.1.1`) that is opened by clicking on the icon (:numref:`3.1.2` **(1)**), activations in progress, those being prepared, and those that have been resolved are displayed. On the left side of the **(1)** page, the type of emergency, the location of the emergency, and the stage of the emergency (ongoing, preparedness, recovery, ...) can be selected. On the right **(2)** a drop-down menu allows you to select in more detail the type of emergency: not only fires, floods and droughts, but also earthquakes, hurricanes, humanitarian crises, ....
+
+At the bottom of the interactive map **(3)** you can select the time interval in which you want to view the emergency map.
+
+It can be seen that for each activation and for each area of interest there can be more than one product.
+
+.. _3.1.1.1:
+
+.. figure:: /img/3/3.1.1.1.png
+   :align: center
+
+   -- Copernicus EMS On-Demand Mapping
+
+Once the desired item on the map is selected, clicking on the number that appears opens a window that provides access to **"Activation Details ”** (:numref:`3.1.1.2` **(1)**).
+
+.. _3.1.1.2:
+
+.. figure:: /img/3/3.1.1.2.png
+   :align: center
+
+   -- Activation Details On-Demand Mapping.
+
+The “Activations details” link (:numref:`3.1.1.3`) opens a page that contains all the information about the selected event. In addition to defining the type of event (“EVENT TYPE”), the date (“EVENT TIME”) and the geographic location (“AFFECTED COUNTRY”), the reasons why the emergency in question was activated (“ACTIVATION REASON”) are given. Finally, the list of available products appears on the left.
+
+.. _3.1.1.3:
+
+.. figure:: /img/3/3.1.1.3.png
+   :align: center
+
+   -- Example of data available for a selected event
+
+There are five types of products (`more information here <https://mapping.emergency.copernicus.eu/about/rapid-mapping-portfolio/>`_): three post-events (with the possibility of updates, called **Monitoring**), a pre-event product, and an online report that centralizes all information related to the specific activation (**Situational Reporting**).
+
++ **First Estimate Product (FEP)**: provides a very quick (but rough) initial assessment of the most affected areas, based on the first available post-event image. It is used to highlight potentially affected areas, review initial specifications of requested products, or decide on possible cancellations.
++ **Delineation Products (DEL)**: assess the impact and extent of the event through images acquired as soon as possible after the disaster. They can be updated on demand to monitor the evolution of the situation.
++ **Grading Products (GRA)**: provide information on the degree of damage, its spatial distribution and extent. They are an extension of delineation products, as they include both the type of event and its extent and the damage classification. They can be updated upon request and are released along with delineation products if requested later.
++ **Reference Products (REF)**: unique pre-event product, available only for activations outside Europe. Provides pre-event spatial information based on images captured as close as possible to the date of the event.
++ **Situational Reporting (SR)**: is an online report that visually and informatively summarizes the event and activation. It starts within 4 hours of the activation with key exposure information and is updated regularly until the activation is closed, including data from other sources (media, social media, Copernicus EMS).
+
+.. _Download flooded area delineation map:
+
+Download flooded area delineation map
+-------------------------------------
+
+Open the `EMS website <https://emergency.copernicus.eu/>`_ and click in the **On-Demand Mapping** section. To locate the exercise event, select “flood” **(1)**, Country: Italy **(2)** and narrow the time range from January 2020 to November 2021 **(3)** (:numref:`3.1.2.1`).
+
+.. _3.1.2.1:
+
+.. figure:: /img/3/3.1.2.1.png
+   :align: center
+
+   -- On-Demand mapping
+
+Seven events appear in the map; zooming in brings us to a reduced area in which we can locate the event that occurred in Piedmont in October 2020 (:numref:`3.1.2.2`).
+
+.. _3.1.2.2:
+
+.. figure:: /img/3/3.1.2.2.png
+   :align: center
+
+   -- Flooding in the Piedmont region in October 2020.
+
+Clicking on **"Activation details ”** opens a window showing the list of available products corresponding to 6 different zones. We select “Vercelli” **(1)** and download the available data by clicking on “Vector” **(2)** (:numref:`3.1.2.3`).
+
+.. _3.1.2.3:
+
+.. figure:: /img/3/3.1.2.3.png
+   :align: center
+
+   -- Download EMS data regarding the flooding in Piedmont.
+
+Importing the EMS Data in QGIS
+------------------------------
+
+Open existed QGIS project
+*************************
+
+In order to open an existing QGIS project; in the toolbar of QGIS interface go to the top left corner click  on **Project (1)** then on **Open (2)** (:numref:`3.1.3.1`) . Alternatively use the shortcut ”CTRL+O”, then navigate to the folder that contains the ".qgz“ file. The project has been saved in :ref:`chapter 1.2.2.5 <Save project>` .
+
+.. _3.1.3.1:
+
+.. figure:: /img/3/3.1.3.1.png
+   :align: center
+
+   -- Open existed QGIS Project
+
+Import EMS vector data in QGIS
+******************************
+
+Ensure that the downloaded **Vector Package** folder is unzipped. Inside the downloaded folder you will see many files with different extensions (:numref:`3.1.3.2`) , for the purpose of this lecture we are just interested in shapefiles, other extensions will be explained in later chapters. Typically when we refer to “shapefile'' we are talking about a collection of files with different extensions in which the main one is a .shp file **(1)** that contains the geometry (points, lines, or polygons) of the features. The other two main files composing a shapefile are the .shx which is an index file and the .dbf which stores attribute data.
+
+.. note:: To have a more technical and in depth explanation of the shapefile data format you can refer to the `ESRI Shapefile Technical Description <https://support.esri.com/en-us/technical-paper/esri-shapefile-technical-description-279>`_ . 
+
+.. _3.1.3.2:
+
+.. figure:: /img/3/3.1.3.2.png
+   :align: center
+
+   -- Import Vector data in QGIS
+
+Importing vector data into QGIS (:numref:`3.1.3.3`) can be done by clicking on **Layer (1)** in the bar menu, then on **Add Layer (2)** and **Add Vector Layer (3)**; a new menu called **Data Source Manager (4)** will open up. Alternatively, you can open the same menu by clicking **Open Data Source Manager (5)**. From the **Data Source Manager** click on the three dotted icon **(6)** you will need to browse the folder in your pc in order to find the data you want to import. Select the following data:
+
++ EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1.shp
++ EMSR468_AOI05_DEL_PRODUCT_hydrographyA_r1_v1.shp
++ EMSR468_AOI05_DEL_PRODUCT_hydrographyL_r1_v1.shp
++ EMSR468_AOI05_DEL_PRODUCT_imageFootprintA_r1_v1.shp
++ EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1.shp
++ EMSR468_AOI05_DEL_PRODUCT_transportationL_r1_v1.shp
+
+Once done, click on **Add (7)**.
+In the following paragraphs we will see what the loaded data are and how it is best to represent them. In this way, we will learn how to modify the styles in the representation of the data according to its characteristics (line, polygon, ...) and the information it contains.
+
+.. _3.1.3.3:
+
+.. figure:: /img/3/3.1.3.3.png
+   :align: center
+
+   -- Import Vector data in QGIS
+
+QGIS Vector Visualization
+*************************
+
+You can now visualize your products in the Layer List **(1)** (:numref:`3.1.3.4`) .
+By clicking on the box near a layer name you can deactivate and activate them, deactivate “EMSR468_AOI05_DEL_PRODUCT_imageFootprintA_r1_v1” **(2)**. Now zoom-in in order to have a better view of your data, alternatively you can right-click on an active layer **(3)**,  this will open a new menu where you can select the **Zoom to Layer(s)** option **(4)**.
+
+.. _3.1.3.4:
+
+.. figure:: /img/3/3.1.3.4.png
+   :align: center
+
+   -- QGIS Vector Visualization
+
+**Single symbol style**
+
+We will now change the style of our layers, starting with the “EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1” layer (:numref:`3.1.3.5`) . Of the area affected by the event we are studying we only need to highlight the border/edge, there is no other information. Therefore, we want to display it with a simple well-defined border (red colour). Let’s see how to do so.
+Double click on the layer mentioned above or right click on it **(1)** and select **Properties (2)**. The Layer Properties panel will appear, select **Symbology (3)**, then **Single Symbol (4)**. At this point choose the **outline red** style **(5)** and click on **ok (6)**.
+
+.. _3.1.3.5:
+
+.. figure:: /img/3/3.1.3.5.png
+   :align: center
+
+   -- Single symbol style
+
+**Categorized style**
+
+It is now the turn of the “EMSR468_AOI05_DEL_PRODUCT_hydrographyA_r1_v1” layer (:numref:`3.1.3.6`) . The hydrography layer if represented with a single colour (i.e. a single category) provides no further information. Represented instead in a different style, it allows more details to be displayed.
+As before, open the symbology property by right-clicking on **(1)** then select **Properties (2)** and **Symbology (3)**. This time change the style to **Categorize (4)** and set the Value field as **obj_type (5)**. Click on **classify (6)** and optionally, change the colors **(7)**. When you are satisfied click on **ok (8)**. You can see that there are three different categories related to the hydrography: lake, river and reservoir, which are now also distinct in their representation.
+
+.. _3.1.3.6:
+
+.. figure:: /img/3/3.1.3.6.png
+   :align: center
+
+   -- Categorized style
+
+The result of this operation is shown here (:numref:'3.1.3.7') .
+
+.. _3.1.3.7:
+
+.. figure:: /img/3/3.1.3.7.png
+   :align: center
+
+   -- Categorized Style - Result
+
+**Feature labels**
+
+Open the Layer Properties panel of the layer: “EMSR468_AOI05_DEL_PRODUCT_hydrographyL_r1_v1” **(1)** (:numref:`3.1.3.8`) .
+In the case of hydrography information with 'lines', this represents the position of watercourses in the area being considered. It is interesting to associate these elements (if available) with their names. this is done by operating on the “labels”
+Choose the **Labels** tab **(2)** and select **Single Labels (3)** from the drop down menu. Now select the field that will be used to label our data in the map canvas by choosing “name” in the Value field **(4)**. Select Text **(5)** in order to modify the text style of the label and set the font **Size** to 5.0 **(6)**.
+If you click on **Apply (7)** and move the Layer Properties panel in order to be able to look at the map canvas, you will see that it is difficult to read our labels at first glance, in the next step we will see how to fix this issue.
+
+.. _3.1.3.8:
+
+.. figure:: /img/3/3.1.3.8.png
+   :align: center
+
+   -- Feature labels Text
+
+Go back to the Layer Properties panel and click on Background **(1)** (:numref:`3.1.3.9`) . Enable it by ticking the **Draw background** box **(2)** and selecting a color of your choice in the color ramp **(3)** in the color bar, keep in mind that the text color is black, so choosing darker tones will make it harder to see. Adding a background will partially cover what is underneath the text of our labels but it will make the text much more readable.
+
+.. _3.1.3.9:
+
+.. figure:: /img/3/3.1.3.9.png
+   :align: center
+
+   -- Feature labels Background
+
+The result of this operation is shown here (:numref:`3.1.3.10`).
+
+.. _3.1.3.10:
+
+.. figure:: /img/3/3.1.3.10.png
+   :align: center
+
+   -- Feature labels - Result
+
+**Graduated style**
+
+We will now modify the style of the “EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1” layer **(1)** (:numref:`3.1.3.11`) . 
+The observed event we are considering is a flood.  The territory is not affected by the flood in a constant manner (single colour): there are areas that are more exposed and others that are less, so a visualisation that takes this into account is necessary.
+Open the **Symbology** tab and select **Graduated (2)** from the drop down menu. Choose “area” in the Value field **(3)**, our objective will be to visualize flooded areas with different colors based on their size. Select a color ramp of your choice **(4)**. In our dataset we have a lot of small areas and only a few big ones, given this distribution we can select the **Logarithmic Scale** or **Natural Breaks (Jenks)** mode **(5)** in order to enhance the distance between classes. Set the number of classes to 15 **(6)** and click on **Classify (7)** you will see the preview of the classification in the preview panel **(8)**. When you are satisfied click on **ok (9)**.
+
+.. _3.1.3.11:
+
+.. figure:: /img/3/3.1.3.11.png
+   :align: center
+
+   -- Graduated style
+
+The result of this operation is shown here (:numref:`3.1.3.12`) .
+
+.. _3.1.3.12:
+
+.. figure:: /img/3/3.1.3.12.png
+   :align: center
+
+   -- Graduated style - Result
+
+**Saving Style**
+
+If you are satisfied with a style and you want to save it in order to use it in the future, you can click on **Style (1)** (:numref:`3.1.3.13`) in the **Symbology** panel of the **Layer Properties** and select **Save Style (2)** from the menu that will open up. In the new window that will open you can select in which format you want to save your file **(3)** and have a preview of which categories will be saved **(4)**, you will also have the possibility to deactivate the ones you are not interested in by clicking on the ticked boxes, but we are not interested in doing so now. By clicking on the three dots **(5)** you will be able to navigate your folders and choose the path where to save your style, when you are done click on ok **(6)**.
+
+.. _3.1.3.13:
+
+.. figure:: /img/3/3.1.3.13.png
+   :align: center
+
+   -- Saving Style
+
+Attribute table
+***************
+
+Usually when we work on vector data we have access to an attribute table (:numref:`3.1.3.14`) , this table will display information on the features of the chosen layer. We will now look at the attribute table of the “EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1” layer **(1)** In order to open it we need to right click on the layer and select **Open Attribute Table (2)** between the various options. The attribute table **(3)** will be displayed, here we can see the attributes composing our layer represented as the columns headlines **(4)**, each row representing an entry.
+On top of the attribute table we have some buttons offering different options:
+
++ Toggle editing mode **(5)**
++ Reload the table **(6)**
++ Select features using an Expression **(7)**
++ Select All **(8)**
++ Invert selection **(9)**
++ Deselect all **(10)**
++ Filter/Select features using form **(11)**
++ Move selected to top **(12)**
++ Pan map to the selected rows **(13)**
++ Zoom map to the selected rows **(14)**
++ Organize Columns **(15)**
++ Open field calculator **(16)**
++ Conditional formatting **(17)**
++ Actions **(18)**
++ Dock Attribute Table **(19)**
+
+.. _3.1.3.14:
+
+.. figure:: /img/3/3.1.3.14.png
+   :align: center
+
+   -- Attribute table
+
+**Select the largest area affected by flood**
+
+In order to select the largest area affected by the flood we can click on the “area” attribute of the attribute table **(1)** (:numref:`3.1.3.15`) , since the values are numerical, data will be automatically sorted by decreasing values thus the largest area will be represented in the first row. Clicking again on the same attribute will sort data by increasing order. We will now click on the corresponding row number in order to select our feature **(2)**. Now that we have performed our selection we can right click anywhere on our selected feature **(3)** and select **Zoom to Feature (4)**, this will zoom the map canvas over our feature. Alternatively, since we have performed a selection, we can click on the **Zoom map to the selected rows (5)** .
+
+.. _3.1.3.15:
+
+.. figure:: /img/3/3.1.3.15.png
+   :align: center
+
+   -- Largest area affected by flood
+
+**Calculate the total area affected**
+
+In order to perform computations we can use the Field Calculator (:numref:`3.1.3.16`) . First we click on **Toggle editing mode (1)** and then on the **Field Calculator** button **(2)** to open it.
+The first thing we will do is to thick the **Create virtual field** box **(3)**, then we give a name to the new column which will host the result of our computation, in this case, “Total_Area” **(4)**. We set the **Output Field Type** to “Decimal” **(5)** since setting it to “Integer” will remove all values after the comma. Since we want to sum all values of the area field searched for the sum function in the search bar by typing “sum” **(6)**, once found, click on it twice to add it to the expression tab (we will look at it later). On the right of the Field Calculator an in depth explanation of how the chosen function works will open up **(7)**. Click on **Fields and Values (8)** to open the curtain menu and double click on “area” **(9)**. Now you will need to complete the formula in the expression tab by adding a closing bracket “ ) ” **(10)**. Alternatively you could have just typed the formula inside the expression tab as: “ sum( "area" ) ” (removing the external quotation marks). If you have written the formula in the correct form you should see a **Preview** of the result **(11)**. In this case we just need these values because we can still conclude the procedure by clicking on **ok (12)**.
+
+.. _3.1.3.16:
+
+.. figure:: /img/3/3.1.3.16.png
+   :align: center
+
+   -- Total area affected by flood
+
+Save project in QGIS
+********************
+
+We will now look at how to save a project in QGIS (:numref:`3.1.3.17`) , in order to do so click on **Project (1)** and then on **Save (2)**. After that you will need to select the path you like your project to be saved in **(3)**, give it a name **(4)** and click on **Save (5)**.
+
+.. _3.1.3.17:
+
+.. figure:: /img/3/3.1.3.17.png
+   :align: center
+
+   -- Save project in QGIS
