@@ -1,0 +1,13 @@
+.. _7.3:
+
+Obtained results
+================
+
+Based on the results shown in :numref:`7.3.1` it is possible to say that the most affected class (in terms of flooded area percentage) is represented by “Rice fields” (around 58.2%), followed by “Non-irrigated arable land” (15%), “Land principally occupied by agriculture with significant areas of natural vegetation” (9.9%) and “Transitional woodland-shrub” (6.6%). Higher percentages represent land covers closest to the river banks. As we get further from the river, it is less likely to be affected by a flooding event. An analysis of critical zones where the flooding was more severe could be useful to get insight into which areas could be safer than others. It is possible to see that on the hydrographic left of the Sesia River, the flooding did not spread out as much as on the opposite one; this can be due to many factors such as the reinforcement operations on the river banks near the city, the hydraulic condition of the soil, etc.
+
+.. _7.3.1:
+
+.. figure:: /img/7/7.3.1.png
+   :align: center
+
+   -- Results

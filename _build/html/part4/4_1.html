@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.1. How to Download the data with Copernicus Browser &mdash; COPERNICUS4Schools  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4.2. Sentinel-2 images in QGIS" href="4_2.html" />
+    <link rel="prev" title="4. Sentinel-2 Pre- and Post-Event Imagery" href="part4.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            COPERNICUS4Schools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part1/part1.html">1. Introduction to GIS (Geographic Information System)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part2/part2.html">2. GIS and Analysis Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part3/part3.html">3. Retrieving Copernicus EMS Data</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="part4.html">4. Sentinel-2 Pre- and Post-Event Imagery</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.1. How to Download the data with Copernicus Browser</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#why-sentinel-2">4.1.1. Why Sentinel-2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#search-for-sentinel-2-images-in-copernicus-browser">4.1.2. Search for Sentinel-2 images in Copernicus Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#view-and-display-sentinel-2-images-in-copernicus-browser">4.1.3. View and display Sentinel-2 images in Copernicus Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#images-comparison-in-copernicus-browser">4.1.4. Images Comparison in Copernicus Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#evolution-of-flooded-area-timelapse-in-copernicus-browser">4.1.5. Evolution of flooded area “Timelapse” in Copernicus Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#download-sentinel-2-images">4.1.6. Download Sentinel-2 images</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="4_2.html">4.2. Sentinel-2 images in QGIS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part5/part5.html">5. Retrieving Copernicus Land Monitoring Service (CLMS) data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part6/part6.html">6. Retrieving JRC POPULATION DATA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part7/part7.html">7. Computing land Cover affected by flooding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part8/part8.html">8. Population affected by flooding</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COPERNICUS4Schools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="part4.html"><span class="section-number">4. </span>Sentinel-2 Pre- and Post-Event Imagery</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">4.1. </span>How to Download the data with Copernicus Browser</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/part4/4_1.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-download-the-data-with-copernicus-browser">
+<span id="id1"></span><h1><span class="section-number">4.1. </span>How to Download the data with Copernicus Browser<a class="headerlink" href="#how-to-download-the-data-with-copernicus-browser" title="Link to this heading"></a></h1>
+<section id="why-sentinel-2">
+<span id="section-4-1-1"></span><h2><span class="section-number">4.1.1. </span>Why Sentinel-2<a class="headerlink" href="#why-sentinel-2" title="Link to this heading"></a></h2>
+<p>The Sentinel-2 mission is part of the Copernicus program through which two satellites were launched with the aim of providing high resolution multi-spectral images of the Earth’s surface. The two satellites are placed 180° from one to the other on a polar sun-synchronous orbit at around 800 km from the earth offering a revisit time of the same area at the equator of 10 days. In this way the constellation composed by the two satellites permits a revisit time of 5 days, a low revisit time is fundamental when trying to monitor phenomena that changes through time like a flooding event or a wildfire.
+Images captured by Sentinel-2 are composed of 13 spectral bands,  some of which are in the visible range while others are infrared. With this composition it is possible to analyze things like land cover, water quantity and quality, vegetation health, soil composition etc. The spatial resolution of Sentinel 2 varies between 10 to 60 m depending on which band we are referring to, in this way it is possible to retrieve detailed observations
+Talking about coverage, Sentinel-2 satellites offers a swath width of 290 km; this means the width of the area on earth that these satellites can capture passing a single time over an area very noticeable allowing to reduce data mosaicking. Another important feature of data acquired via Sentinel-2is that are accessible for free and available to the public.</p>
+</section>
+<section id="search-for-sentinel-2-images-in-copernicus-browser">
+<h2><span class="section-number">4.1.2. </span>Search for Sentinel-2 images in Copernicus Browser<a class="headerlink" href="#search-for-sentinel-2-images-in-copernicus-browser" title="Link to this heading"></a></h2>
+<p>In order to proceed in this lecture it’s necessary to possess the EMS vector data: “EMSR468_AOI05_DEL_PRODUCT_areaOFInterestA_r1_v1.json” downloaded in  <a class="reference internal" href="../part3/3_1.html#id1"><span class="std std-ref">lecture 3</span></a> .
+Before browsing the image archives, log in to your account in <a class="reference external" href="https://browser.dataspace.copernicus.eu/" rel="noopener noreferrer" target="_blank">Copernicus Browser</a> (<a class="reference internal" href="#id2"><span class="std std-numref">Fig. 4.1.2.1</span></a>) .
+Click on Login <strong>(1)</strong> then fill in the Email <strong>(2)</strong> and Password <strong>(3)</strong> fields with the credentials you used to register in <a class="reference internal" href="../part2/2_1.html#registration"><span class="std std-ref">Chapter 2.1.2.1</span></a> of lecture 2. As the last step, click on LOGIN <strong>(4)</strong>, if everything is correct your name will appear on the top right corner of the sidebar.</p>
+<figure class="align-center" id="id15">
+<span id="id2"></span><img alt="../_images/4.1.2.1.png" src="../_images/4.1.2.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.2.1 </span><span class="caption-text">– Log in to Copernicus Browser</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Once logged in; we are going to take advantage of Copernicus Browser flexibility to find the data we are interested in and to upload the area of interest (AOI). To do so, set the following parameters in the <strong>SEARCH</strong> tab (<a class="reference internal" href="#id3"><span class="std std-numref">Fig. 4.1.2.2</span></a>):
+check the L2A box <strong>(1)</strong>;
+set cloud coverage to 40% <strong>(2)</strong>;
+set the <strong>TIME RANGE</strong> to 28-09-2020 to 04-10-2020 (dd-mm-yyyy), in this case there is no need to modify the hours and minutes range <strong>(3)</strong>.
+This procedure will narrow down the data that will be shown to us. Given the size of the Copernicus Browser entire dataset it would have been impossible to find the data we are interested in without this procedure. Then, set the area you are interested in by clicking on <strong>(4)</strong> and choose the “Upload” method <strong>(5)</strong>. This will allow downloading data relative to a limited area reducing the space needed to store them. At this point click on the area surrounded by the gray dotted line <strong>(6)</strong> and look through your files searching for: “EMSR468_AOI05_DEL_PRODUCT_areaOFInterestA_r1_v1.json” <strong>(7)</strong> (this file was downloaded in <a class="reference internal" href="../part2/2_1.html#id1"><span class="std std-ref">lecture 2</span></a> . A .json file (JavaScript Object Notation) is a flexible and lightweight format used to store various information that can be easily converted into JavaScript objects. As soon as the area has been uploaded click on Open <strong>(8)</strong>. Alternatively, you can just drag and drop the file in the designated area <strong>(6)</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can read more about JavaScript Object Notation <a class="reference external" href="https://www.w3schools.com/js/js_json_intro.asp" rel="noopener noreferrer" target="_blank">here</a> .</p>
+</div>
+<figure class="align-center" id="id16">
+<span id="id3"></span><img alt="../_images/4.1.2.2.png" src="../_images/4.1.2.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.2.2 </span><span class="caption-text">– Set AOI and search parameters</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Once you have done it, the highlighted blue polygon representing the area of interest will be shown like in <a class="reference internal" href="#id4"><span class="std std-numref">Fig. 4.1.2.3</span></a> . Now click on <strong>Search (1)</strong>.</p>
+<figure class="align-center" id="id17">
+<span id="id4"></span><img alt="../_images/4.1.2.3.png" src="../_images/4.1.2.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.2.3 </span><span class="caption-text">– Area of Interest</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="view-and-display-sentinel-2-images-in-copernicus-browser">
+<h2><span class="section-number">4.1.3. </span>View and display Sentinel-2 images in Copernicus Browser<a class="headerlink" href="#view-and-display-sentinel-2-images-in-copernicus-browser" title="Link to this heading"></a></h2>
+<p>You will now see the image tiles covering the AOI (<a class="reference internal" href="#id5"><span class="std std-numref">Fig. 4.1.3.1</span></a>) . We need to look for a product that totally covers the uploaded AOI. The characteristics of the desired product are illustrated in (<a class="reference internal" href="#id6"><span class="std std-numref">Fig. 4.1.3.2</span></a>) . You can select it either by clicking directly on <strong>Visualize</strong> from the sidebar <strong>(1)</strong> or by selecting the image tile that better covers the AOI <strong>(2)</strong> and then, clicking on <strong>Visualize (3)</strong> inside the spawning window.
+.. note:: If the area we are interested in is not completely covered by a single tile it is also possible to download more than a tile and combine them through a procedure called data mosaicking.</p>
+<figure class="align-center" id="id18">
+<span id="id5"></span><img alt="../_images/4.1.3.1.png" src="../_images/4.1.3.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.3.1 </span><span class="caption-text">– Tile visualization for Satellite image(s)</span><a class="headerlink" href="#id18" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id19">
+<span id="id6"></span><img alt="../_images/4.1.3.2.png" src="../_images/4.1.3.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.3.2 </span><span class="caption-text">– Desired image details of post flood event in Vercelli</span><a class="headerlink" href="#id19" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Now change the default visualization from <strong>True color</strong> to <strong>NDWI (1)</strong> (<a class="reference internal" href="#id7"><span class="std std-numref">Fig. 4.1.3.3</span></a>) ; then click on <strong>Add to (2)</strong> and finally click on <strong>Add to Pins (3)</strong>. If everything was done correctly you will see a notification over the icon (4) indicating that you have pinned one product. Click on the pin icon <strong>(4)</strong>.</p>
+<figure class="align-center" id="id20">
+<span id="id7"></span><img alt="../_images/4.1.3.3.png" src="../_images/4.1.3.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.3.3 </span><span class="caption-text">– Post event Satellite image visualization in Copernicus Browser</span><a class="headerlink" href="#id20" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="images-comparison-in-copernicus-browser">
+<span id="images-comparison"></span><h2><span class="section-number">4.1.4. </span>Images Comparison in Copernicus Browser<a class="headerlink" href="#images-comparison-in-copernicus-browser" title="Link to this heading"></a></h2>
+<p>The following procedure will allow a comparison between two or more products. This operation can be useful to understand if the considered products are the one that better suits our requirements.
+The comparison already started when you clicked on <strong>pins</strong>. As shown in <a class="reference internal" href="#id8"><span class="std std-numref">Fig. 4.1.4.1</span></a> , by clicking on <strong>(1)</strong> you can edit the image name (preferable to leave it as default). Instead, clicking on icon <strong>(2)</strong> and then on icon <strong>(3)</strong> will allow you to add a description to your product.
+Now set in <strong>(4)</strong> the date prior to the event (corresponding to <strong>28-09-2020</strong>).</p>
+<figure class="align-center" id="id21">
+<span id="id8"></span><img alt="../_images/4.1.4.1.png" src="../_images/4.1.4.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.4.1 </span><span class="caption-text">– Pinning Sentinel-2 Post event image (28-09-2020)</span><a class="headerlink" href="#id21" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Ensure that you are visualizing the NDWI and add this new product to the pins panel as we have seen in the step before and open the pins panel <strong>(1)</strong>. (<a class="reference internal" href="#id9"><span class="std std-numref">Fig. 4.1.4.2</span></a>)</p>
+<figure class="align-center" id="id22">
+<span id="id9"></span><img alt="../_images/4.1.4.2.png" src="../_images/4.1.4.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.4.2 </span><span class="caption-text">– Pre event Satellite image visualization in Copernicus Browser</span><a class="headerlink" href="#id22" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Clicking on the icon <strong>(1)</strong> for both images (<a class="reference internal" href="#id10"><span class="std std-numref">Fig. 4.1.4.3</span></a>) , enables the Satellite images to be compared through the <strong>compare panel</strong> that you can open by clicking on the icon with the two arrows <strong>(2)</strong>.</p>
+<figure class="align-center" id="id23">
+<span id="id10"></span><img alt="../_images/4.1.4.3.png" src="../_images/4.1.4.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.4.3 </span><span class="caption-text">– Pinning Pre and post event images</span><a class="headerlink" href="#id23" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>As shown in <a class="reference internal" href="#id11"><span class="std std-numref">Fig. 4.1.4.4</span></a> set the <strong>Effect (1)</strong> from the default value of <strong>Split</strong> to <strong>Opacity</strong>, now, by using the <strong>interactive bar (2)</strong> you can decrease and increase the transparency.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Using the <strong>Split</strong> option for the comparative visualization will allow you, through the use of the same <strong>interactive bar</strong>, to hide and illustrate the bottom layer (like you are flipping and turning a book page from right to left).</p>
+</div>
+<figure class="align-center" id="id24">
+<span id="id11"></span><img alt="../_images/4.1.4.4.png" src="../_images/4.1.4.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.4.4 </span><span class="caption-text">– Vercelli’s NDWI Comparison in Copernicus Browser</span><a class="headerlink" href="#id24" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="evolution-of-flooded-area-timelapse-in-copernicus-browser">
+<h2><span class="section-number">4.1.5. </span>Evolution of flooded area “Timelapse” in Copernicus Browser<a class="headerlink" href="#evolution-of-flooded-area-timelapse-in-copernicus-browser" title="Link to this heading"></a></h2>
+<p>What kind of image properties do you think have the major role with respect to the term “flood evolution”?  Since the term evolution is related to time, the best answer is Temporal.
+We can follow the comparison in Copernicus Browser in the <a class="reference internal" href="#images-comparison"><span class="std std-ref">last section</span></a> , but it is insufficient in case we have tens of images. Copernicus Browser provides the solution for such a case (<a class="reference internal" href="#id12"><span class="std std-numref">Fig. 4.1.5.1</span></a>), through what is called Timelapse; to use this functionality, first you must go in the <strong>Layers Panel</strong> by clicking the icon <strong>(1)</strong> then you need to click on the <strong>Create time-lapse animation</strong> symbol <strong>(2)</strong>.</p>
+<figure class="align-center" id="id25">
+<span id="id12"></span><img alt="../_images/4.1.5.1.png" src="../_images/4.1.5.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.5.1 </span><span class="caption-text">– Activate Timelapse in Copernicus Browser</span><a class="headerlink" href="#id25" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The time-lapse will illustrate the last visualization that has been used. Be sure you are visualizing the NDWI before proceeding.</p>
+</div>
+<p>A new window in which you can view and download the time-lapse animation will spawn. Here (<a class="reference internal" href="#id13"><span class="std std-numref">Fig. 4.1.5.2</span></a>) a couple of parameters must be set:</p>
+<ul class="simple">
+<li><p><strong>Time range</strong>: the period that you want to detect the evolution of the flooded area. In our case we want to set it as: 2020-09-28   -   2020-10-03 <strong>(1)</strong>.</p></li>
+<li><p><strong>Min. tile coverage</strong>: how much is the coverage percentage of the tile with respect to the area of interest. Set to 100% <strong>(2)</strong>.</p></li>
+<li><p><strong>Max. cloud coverage</strong>: exclude images with cloud coverage lower than the value you have set. Set it to 100% <strong>(3)</strong> to have as many images as possible, we will remove some manually later.</p></li>
+<li><p><strong>Select 1 image per</strong>: here we choose the interval between images, we will leave the default configuration which is: day <strong>(4)</strong>.</p></li>
+</ul>
+<p>Now you might want to deselect some images. Here, for example, we will exclude the first one since its cloud coverage is too high and it is almost impossible to distinguish our area; to do so, click on <strong>(5)</strong> to un-check the corresponding product.
+To visualize the time-lapse animation online, with the integrated visualization click on <strong>(6)</strong>. In order to download the animation, click on <strong>Download (7)</strong>.
+Once you have done, click on <strong>(8)</strong> to close this window.</p>
+<figure class="align-center" id="id26">
+<span id="id13"></span><img alt="../_images/4.1.5.2.png" src="../_images/4.1.5.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.5.2 </span><span class="caption-text">– View and download Timelapse</span><a class="headerlink" href="#id26" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="download-sentinel-2-images">
+<h2><span class="section-number">4.1.6. </span>Download Sentinel-2 images<a class="headerlink" href="#download-sentinel-2-images" title="Link to this heading"></a></h2>
+<p>Now that you have closed the time-lapse click on <strong>(1)</strong>, to download the image as shown in <a class="reference internal" href="#id14"><span class="std std-numref">Fig. 4.1.6.1</span></a> . Choose the analytical panel <strong>(2)</strong> to set the image format to TIFF <strong>(3)</strong> (Tagged Image File Format). The .tiff format is a popular file format used to store raster data, it allows lossless compression (there is no loss in image quality while compressing the file) and storing images with different color depths.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>more information about .tiff format can be found at <a class="reference external" href="https://web.archive.org/web/20210108172855/https://www.adobe.io/open/standards/TIFF.html" rel="noopener noreferrer" target="_blank">this page</a> .</p>
+</div>
+<p>Set the image resolution to <strong>HIGH (4)</strong> and the coordinate system to WGS84 <strong>(5)</strong>. At this point you can choose the layers <strong>(6)</strong> and bands (for this lecture select all of them) <strong>(7)</strong> that you like to save, remember that by toggling <strong>Clip extra bands (8)</strong> only the first 3 bands will be included in the image. Once you are done, you can download your images through the <strong>Download</strong> button (9).</p>
+<figure class="align-center" id="id27">
+<span id="id14"></span><img alt="../_images/4.1.6.1.png" src="../_images/4.1.6.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1.6.1 </span><span class="caption-text">– Download Sentinel-2 images from Copernicus Browser</span><a class="headerlink" href="#id27" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="part4.html" class="btn btn-neutral float-left" title="4. Sentinel-2 Pre- and Post-Event Imagery" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="4_2.html" class="btn btn-neutral float-right" title="4.2. Sentinel-2 images in QGIS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, GEOLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
